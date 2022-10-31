@@ -71,7 +71,7 @@
                             </li>
                         </ul>
                         <div class="header__top__button">
-                            <a class="cr-btn cr-btn--lg" href="appointment.html">
+                            <a class="cr-btn cr-btn--lg" href="{{ route('Frontend.Appointment') }}">
                                 <span>Make an appointment</span>
                             </a>
                         </div>
@@ -100,11 +100,9 @@
                                 <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
                                 <li><a href="{{ route('Frontend.features') }}">FEATURES</a></li>
                                 <li>
-                                    <a href="services.html">SERVICE</a>
+                                    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>
                                     <ul class="sub-menu">
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="services-2.html">Services Style 2</a></li>
-                                        <li><a href="single-service.html">Single Service</a></li>
+                                        <li><a href="{{ route('Frontend.TaxServices') }}">Tax Services</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
@@ -158,11 +156,9 @@
                         <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
                         <li><a href="{{ route('Frontend.features') }}">FEATURES</a></li>
                         <li>
-                            <a href="services.html">SERVICE</a>
+                            <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>
                             <ul class="sub-menu">
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="services-2.html">Services Style 2</a></li>
-                                <li><a href="single-service.html">Single Service</a></li>
+                                <li><a href="{{ route('Frontend.TaxServices') }}">Services</a></li>
                             </ul>
                         </li>
                         <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
@@ -171,7 +167,7 @@
                 <!--// Main Navigation -->
 
                 <div class="offcanvas__button">
-                    <a class="cr-btn cr-btn--lg" href="appointment.html">
+                    <a class="cr-btn cr-btn--lg" href="{{ route('Frontend.Appointment') }}">
                         <span>Make an appointment</span>
                     </a>
                 </div>
@@ -193,7 +189,7 @@
                 <div class="container">
                     <div class="footer-area__logo text-center">
                         <a href="{{ route('Frontend.index') }}">
-                            <img src="{{ asset('assets/images/logo/logo-footer.webp') }}" alt="footer logo">
+                            <img src="{{ asset('assets/images/logo/logo-theme.webp') }}" style="max-width: 205px;" alt="footer logo">
                         </a>
                     </div>
 
@@ -237,7 +233,7 @@
                             <h5 class="widget-title">QUICK LINKS</h5>
                             <ul>
                                 <li>
-                                    <a href="services.html">Our Services</a>
+                                    <a href="{{ route('Frontend.OurServices') }}">Our Services</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('Frontend.features') }}">Features</a>

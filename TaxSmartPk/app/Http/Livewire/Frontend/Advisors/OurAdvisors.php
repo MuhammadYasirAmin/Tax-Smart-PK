@@ -8,6 +8,6 @@ class OurAdvisors extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.advisors.our-advisors');
+        return view('livewire.frontend.advisors.our-advisors')->layout('layouts.main');
     }
 }

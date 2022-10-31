@@ -7,7 +7,7 @@
                     <div class="cr-breadcrumb">
                         <ul class="cr-breadcrumb__pagination">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="{{ route('Frontend.index') }}">Home</a>
                             </li>
                             <li>Services</li>
                         </ul>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
                     <div class="pg-services__thumb wow fadeInRight">
-                        <img src="assets/images/services/sevices-thumb-right.webp" alt="services thumb">
+                        <img src="{{ asset('assets/images/services/sevices-thumb-right.webp') }}" alt="services thumb">
                     </div>
                 </div>
             </div>
@@ -66,11 +66,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-user.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-user.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">PERSONAL TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">PERSONAL TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -83,11 +83,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-bar.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-bar.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">CORPORATE TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">CORPORATE TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -100,11 +100,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-home.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">PROPERTY TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">PROPERTY TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -117,11 +117,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-briefcase.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-briefcase.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">Business TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">Business TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -134,11 +134,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-briefcase-2.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">International TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">International TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -151,11 +151,11 @@
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="assets/images/icons/service-icon-pie.webp" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
-                                <a href="single-service.html">Finance TAX</a>
+                                <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>
                             </h5>
                             <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
                                 rem per </p>
@@ -171,60 +171,6 @@
 
 </section>
 <!--// Page Service Area -->
-
-<!-- Funfact Area -->
-<div id="funfact-area" class="funfact-area bg--white">
-    <div class="funfacts">
-        <div class="row g-0">
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">349</span>
-                    </h1>
-                    <h5>TRUSTED CLIENTS</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">109</span>
-                    </h1>
-                    <h5>Awards Win</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">459</span>
-                    </h1>
-                    <h5>Project Done</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">19</span>
-                    </h1>
-                    <h5>Expert Advisor</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-        </div>
-    </div>
-</div>
-<!--// Funfact Area -->
 
 <!-- Testimonial Area -->
 <div id="testimonial-area" class="testimonial-area section-padding--xlg bg--white">
@@ -258,7 +204,8 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-3.webp" alt="testimonial author">
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-3.webp') }}"
+                                    alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>SHON SMITH</h6>
@@ -284,7 +231,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-2.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-2.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -311,7 +258,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-1.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -338,7 +285,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-3.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-3.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -365,7 +312,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-2.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-2.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -392,7 +339,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-1.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">

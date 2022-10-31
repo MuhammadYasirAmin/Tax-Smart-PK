@@ -8,6 +8,6 @@ class AppointmentForm extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.supports.appointment-form');
+        return view('livewire.frontend.supports.appointment-form')->layout('layouts.main');
     }
 }

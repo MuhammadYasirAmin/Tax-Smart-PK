@@ -7,12 +7,12 @@
                     <div class="cr-breadcrumb">
                         <ul class="cr-breadcrumb__pagination">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="{{ route('Frontend.index') }}">Home</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="{{ route('Frontend.OurServices') }}">Services</a>
                             </li>
-                            <li>Single Service</li>
+                            <li>Tax Service</li>
                         </ul>
                         <h1>Our Services</h1>
                         <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
@@ -34,7 +34,7 @@
 						<div class="row align-items-xl-center align-items-start">
 							<div class="col-lg-6">
 								<div class="pg-service__thumb wow fadeInLeft">
-									<img src="assets/images/service/pg-service-thumb.webp" alt="service page thumb">
+									<img src="{{ asset('assets/images/service/pg-service-thumb.webp') }}" alt="service page thumb">
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -103,7 +103,7 @@
 							</div>
 							<div class="col-lg-5 order-1 order-lg-2">
 								<div class="pg-service__thumb-bottom text-center wow fadeInRight">
-									<img src="assets/images/service/service-bottom-thumb.webp" alt="service bottom thumb">
+									<img src="{{ asset('assets/images/service/service-bottom-thumb.webp') }}" alt="service bottom thumb">
 								</div>
 							</div>
 						</div>
@@ -113,8 +113,8 @@
 
 				<!-- Service Page Pagination -->
 				<div class="pg-service__pagination">
-					<a href="single-service.html" class="service-pagination prev">Prev</a>
-					<a href="single-service.html" class="service-pagination next">Next</a>
+					<a href="{{ route('Frontend.TaxServices') }}" class="service-pagination prev">Prev</a>
+					<a href="{{ route('Frontend.TaxServices') }}" class="service-pagination next">Next</a>
 				</div>
 				<!--// Service Page Pagination -->
 
@@ -174,186 +174,6 @@
 				</div>
 			</div>
 			<!--// Funfact Area -->
-
-			<!-- Testimonial Area -->
-			<div id="testimonial-area" class="testimonial-area section-padding--xlg bg--white">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="section-title no-padding">
-								<h2>WHAT
-									<span class="color--theme">CLIENTS SAY</span>
-								</h2>
-								<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanti, totam rem aperiam, eaque
-									ipsa quae so something new for tax calculation </p>
-							</div>
-						</div>
-
-						<div class="col-lg-8">
-							<div class="testimonial testimonial-slider-style3-active testimonial--style3">
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-3.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>SHON SMITH</h6>
-											<span>President</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-2.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>RAISA MARIYA</h6>
-											<span>Ceo</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-1.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>John Patrik</h6>
-											<span>Executive</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-3.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>SHON SMITH</h6>
-											<span>President</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-2.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>RAISA MARIYA</h6>
-											<span>Ceo</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-								<!-- Testimonial Single -->
-								<div class="testimonial__single">
-
-									<!-- Testimonial Content Single -->
-									<div class="testimonial__content__single">
-										<p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur aut odit aut fugit, sed
-											quia
-										</p>
-									</div>
-									<!--// Testimonial Content Single -->
-
-									<!-- Single Author -->
-									<div class="testimonial__author__single">
-										<div class="testimonial__author__image">
-											<img src="assets/images/testimonial/testimonial-author-1.webp" alt="testimonial author">
-										</div>
-										<div class="testimonial__author__description">
-											<h6>John Patrik</h6>
-											<span>Executive</span>
-										</div>
-									</div>
-									<!--// Single Author -->
-
-								</div>
-								<!--// Testimonial Single -->
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--// Testimonial Area -->
 
 			<!-- Call To Action Area -->
 			<section id="cta-area" class="cta-area section-padding--sm bg--grey--light bg--abstruct-mask">

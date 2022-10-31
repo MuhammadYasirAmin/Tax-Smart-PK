@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-area__image">
-                        <img class="wow slideInLeft" data-wow-delay="0" src="assets/images/about/about-thumbnail.webp"
+                        <img class="wow slideInLeft" data-wow-delay="0" src="{{ asset('assets/images/about/about-thumbnail.webp') }}"
                             alt="about area thumb">
                     </div>
                 </div>
@@ -91,14 +91,8 @@
                             </span>
                             TO GROWUP
                         </h3>
-                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                            totam rem aperiam, eaque
-                            ipsa quae </p>
-                        <p>Parchitect beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                            aspernatur aut odit aut
-                            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                            porro quisquam est,
-                            qui dolorem</p>
+                        <p>Taxsmartpk takes care of all your tax obligations. It is the only place that brings you the best tax related solutions.</p>
+                        <p>We're offering smart and innovative services with the top quality standards, through a great organizational structure. Our main priority is our clients so we make sure that we give them accurate and timely submissions through our competent team.</p>
                         <a href="{{ route('Frontend.AboutUs') }}" class="cr-btn">
                             <span>Read More</span>
                         </a>
@@ -213,7 +207,7 @@
                                 </div>
                                 <div class="service__content">
                                     <h5>
-                                        <a href="single-service.html">PERSONAL TAX</a>
+                                        <a href="{{ route('Frontend.TaxServices') }}">PERSONAL TAX</a>
                                     </h5>
                                     <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
                                         totam rem per </p>
@@ -230,7 +224,7 @@
                                 </div>
                                 <div class="service__content">
                                     <h5>
-                                        <a href="single-service.html">CORPORATE TAX</a>
+                                        <a href="{{ route('Frontend.TaxServices') }}">CORPORATE TAX</a>
                                     </h5>
                                     <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
                                         totam rem per </p>
@@ -247,7 +241,7 @@
                                 </div>
                                 <div class="service__content">
                                     <h5>
-                                        <a href="single-service.html">Business TAX</a>
+                                        <a href="{{ route('Frontend.TaxServices') }}">Business TAX</a>
                                     </h5>
                                     <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
                                         totam rem per </p>
@@ -264,7 +258,7 @@
                                 </div>
                                 <div class="service__content">
                                     <h5>
-                                        <a href="single-service.html">Finance TAX</a>
+                                        <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>
                                     </h5>
                                     <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
                                         totam rem per </p>
@@ -435,7 +429,7 @@
                     </div>
                     <figcaption class="advisor__content">
                         <h6>
-                            <a href="advisor-details.html">SIMON DE ANDERSON</a>
+                            <a href="{{ route('Frontend.AdvisorDetail') }}">SIMON DE ANDERSON</a>
                         </h6>
                         <p>Senior Advisor</p>
                     </figcaption>
@@ -451,7 +445,7 @@
                     </div>
                     <figcaption class="advisor__content">
                         <h6>
-                            <a href="advisor-details.html">JUlia ANDERSON</a>
+                            <a href="{{ route('Frontend.AdvisorDetail') }}">JUlia ANDERSON</a>
                         </h6>
                         <p>Senior Advisor</p>
                     </figcaption>
@@ -467,7 +461,7 @@
                     </div>
                     <figcaption class="advisor__content">
                         <h6>
-                            <a href="advisor-details.html">David Miller</a>
+                            <a href="{{ route('Frontend.AdvisorDetail') }}">David Miller</a>
                         </h6>
                         <p>Tax Advisor</p>
                     </figcaption>
@@ -483,7 +477,7 @@
                     </div>
                     <figcaption class="advisor__content">
                         <h6>
-                            <a href="advisor-details.html">Martin Smith</a>
+                            <a href="{{ route('Frontend.AdvisorDetail') }}">Martin Smith</a>
                         </h6>
                         <p>Tax Advisor</p>
                     </figcaption>
@@ -629,7 +623,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-1.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -642,7 +636,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-2.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-2.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -655,7 +649,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-3.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-3.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -668,7 +662,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-1.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -681,7 +675,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-2.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-2.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -694,7 +688,7 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="assets/images/testimonial/testimonial-author-3.webp"
+                                <img src="{{ asset('assets/images/testimonial/testimonial-author-3.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
@@ -713,154 +707,6 @@
     </div>
 </div>
 <!--// Testimonial Area -->
-
-<!-- Blog Area -->
-<section id="blog-area" class="blog-area section-padding--xlg bg--white">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10">
-                <div class="section-title text-center">
-                    <h4>OUR BLOG</h4>
-                    <h2>LATEST POST
-                        <span class="color--theme">FROM BLOG</span>
-                    </h2>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque
-                        ipsa quae</p>
-                </div>
-            </div>
-        </div>
-        <div class="row blog-area__blogs justify-content-center">
-
-            <!-- Single Blog -->
-            <div class="col-lg-4 col-md-6">
-                <article class="blog sticky">
-                    <div class="blog__thumb">
-                        <a href="blog-details.html">
-                            <img src="assets/images/blog/blog-thumbnail-1.webp" alt="blog thumb">
-                        </a>
-                    </div>
-                    <div class="blog__content">
-                        <header class="blog__content__header">
-                            <ul class="blog__content__categories">
-                                <li>
-                                    <a href="blog-right-sidebar.html">Tax</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">Personal Tax</a>
-                                </li>
-                            </ul>
-                            <h4>
-                                <a href="blog-details.html">How to calculate tax ?</a>
-                            </h4>
-                        </header>
-                        <footer class="blog__content__footer">
-                            <ul class="blog__content__meta">
-                                <li>October 28.</li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">Alex Smith.</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">4 Comments</a>
-                                </li>
-                            </ul>
-                            <p>Perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudanti, totam
-                                rem aperiam, eaque ipsa
-                                quae so some ulation </p>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-            <!--// Single Blog -->
-
-            <!-- Single Blog -->
-            <div class="col-lg-4 col-md-6">
-                <article class="blog">
-                    <div class="blog__thumb">
-                        <iframe
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347257536&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
-                    </div>
-                    <div class="blog__content">
-                        <header class="blog__content__header">
-                            <ul class="blog__content__categories">
-                                <li>
-                                    <a href="blog-right-sidebar.html">Tax</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">Tax Tutorial</a>
-                                </li>
-                            </ul>
-                            <h4>
-                                <a href="blog-details.html">TAX CALCULATION TUTORIAL</a>
-                            </h4>
-                        </header>
-                        <footer class="blog__content__footer">
-                            <ul class="blog__content__meta">
-                                <li>October 28.</li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">Momen Bhuiyan.</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">6 Comments</a>
-                                </li>
-                            </ul>
-                            <p>Perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudanti, totam
-                                rem aperiam, eaque ipsa
-                                quae so some ulation </p>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-            <!--// Single Blog -->
-
-            <!-- Single Blog -->
-            <div class="col-lg-4 col-md-6">
-                <article class="blog blog--slider-active">
-                    <div class="blog__thumb">
-                        <a href="blog-details.html">
-                            <img src="assets/images/blog/blog-thumbnail-2.webp" alt="blog thumb">
-                        </a>
-                        <a href="blog-details.html">
-                            <img src="assets/images/blog/blog-thumbnail-1.webp" alt="blog thumb">
-                        </a>
-                    </div>
-                    <div class="blog__content">
-                        <header class="blog__content__header">
-                            <ul class="blog__content__categories">
-                                <li>
-                                    <a href="blog-right-sidebar.html">BUSINESS</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">BUSINESS DEVELOPMENT</a>
-                                </li>
-                            </ul>
-                            <h4>
-                                <a href="blog-details.html">BUSINESS DEVELOPMENT</a>
-                            </h4>
-                        </header>
-                        <footer class="blog__content__footer">
-                            <ul class="blog__content__meta">
-                                <li>October 28.</li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">Jesica Sharlin.</a>
-                                </li>
-                                <li>
-                                    <a href="blog-right-sidebar.html">12 Comments</a>
-                                </li>
-                            </ul>
-                            <p>Perspiciatis unde omnis iste natus error sit tatem accusantium doloremque laudanti, totam
-                                rem aperiam, eaque ipsa
-                                quae so some ulation </p>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-            <!--// Single Blog -->
-
-        </div>
-    </div>
-</section>
-<!--// Blog Area -->
 
 <!-- Call To Action Area -->
 <section id="cta-area" class="cta-area section-padding--sm bg--grey--light bg--abstruct-mask">

@@ -4,10 +4,10 @@ namespace App\Http\Livewire\Frontend\Services;
 
 use Livewire\Component;
 
-class ServiceDetail extends Component
+class TaxService extends Component
 {
     public function render()
     {
-        return view('livewire.frontend.services.service-detail');
+        return view('livewire.frontend.services.service-detail')->layout('layouts.main');
     }
 }
