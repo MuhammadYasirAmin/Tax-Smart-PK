@@ -40,15 +40,15 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: new Color(0xffF5591F),
-                gradient: LinearGradient(
-                    colors: [(new Color(0xffF5591F)), (new Color(0xffF2861E))],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter)),
+                color: Color.fromARGB(255, 89, 163, 231),
+                gradient: LinearGradient(colors: [
+                  (new Color.fromARGB(255, 89, 163, 231)),
+                  (new Color.fromARGB(255, 10, 129, 240))
+                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           ),
           Center(
             child: Container(
-              child: Image.asset("/assets/Images/logo.PNG"),
+              child: Image.asset("assets/Images/logo.png"),
             ),
           )
         ],
