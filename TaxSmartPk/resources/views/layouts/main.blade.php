@@ -63,11 +63,11 @@
                     <div class="header__top__inner">
                         <ul class="header__top__info">
                             <li>
-                                <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a>
+                                <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> (+92) 317 5902778</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i>
-                                    info@taxco.com</a>
+                                    info@taxsmartpk.com</a>
                             </li>
                         </ul>
                         <div class="header__top__button">
@@ -98,13 +98,13 @@
                                     <a href="{{ route('Frontend.index') }}">HOME</a>
                                 </li>
                                 <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
-                                <li><a href="{{ route('Frontend.features') }}">FEATURES</a></li>
-                                <li>
-                                    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{ route('Frontend.TaxServices') }}">Tax Services</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="{{ route('Frontend.OurServices') }}">SERVICES</a></li>
+                                <!--<li>-->
+                                <!--    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>-->
+                                <!--    <ul class="sub-menu">-->
+                                <!--        <li><a href="{{ route('Frontend.TaxServices') }}">Tax Services</a></li>-->
+                                <!--    </ul>-->
+                                <!--</li>-->
                                 <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
                             </ul>
                         </nav>
@@ -154,13 +154,13 @@
                             <a href="{{ route('Frontend.index') }}">HOME</a>
                         </li>
                         <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
-                        <li><a href="{{ route('Frontend.features') }}">FEATURES</a></li>
-                        <li>
-                            <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{ route('Frontend.TaxServices') }}">Services</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('Frontend.OurServices') }}">SERVICES</a></li>
+                        <!--<li>-->
+                        <!--    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>-->
+                        <!--    <ul class="sub-menu">-->
+                        <!--        <li><a href="{{ route('Frontend.TaxServices') }}">Services</a></li>-->
+                        <!--    </ul>-->
+                        <!--</li>-->
                         <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -197,30 +197,20 @@
 
                         <!-- Single Widget -->
                         <section class="widget widget-about">
-                            <h5 class="widget-title">ABOUT Tax Smart PK</h5>
+                            <h5 class="widget-title">ABOUT TaxSmartPK</h5>
                             <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium oloremque laudantium,
                                 totam rem onsectetur sires
                                 to obtain pain of itself because</p>
                             <div class="social-icons social-icons--rounded">
                                 <ul>
                                     <li class="facebook">
-                                        <a href="https://www.facebook.com/">
+                                        <a href="https://www.facebook.com/profile.php?id=100063563576480">
                                             <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
                                     <li class="instagram">
-                                        <a href="https://www.instagram.com/">
+                                        <a href="https://instagram.com/taxsmartpk?igshid=YmMyMTA2M2Y=">
                                             <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="google-plus">
-                                        <a href="https://plus.google.com/discover">
-                                            <i class="fa fa-google-plus"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -233,16 +223,13 @@
                             <h5 class="widget-title">QUICK LINKS</h5>
                             <ul>
                                 <li>
-                                    <a href="{{ route('Frontend.OurServices') }}">Our Services</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('Frontend.features') }}">Features</a>
+                                    <a href="{{ route('Frontend.index') }}">Home</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('Frontend.AboutUs') }}">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">Help Centre</a>
+                                    <a href="{{ route('Frontend.OurServices') }}">Our Services</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('Frontend.ContactUs') }}">Contact Us</a>
@@ -253,23 +240,22 @@
 
                         <!-- Single Widget -->
                         <section class="widget widget-twitter-feed">
-                            <h5 class="widget-title">Twitter Feed</h5>
+                            <h5 class="widget-title">Social Media</h5>
                             <ul>
                                 <li>
                                     <p>
-                                        <a href="">@Alex Smith</a>, unde omnis te us error sit voluptatem
+                                        <a href="https://www.facebook.com/profile.php?id=100063563576480" target="_blank">@Facbook</a>
                                     </p>
-                                    <span class="time">
-                                        <a href="javascript:void(0);">10 Mins ago</a>
-                                    </span>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="">@Justin Bieber</a>, unde omnis te us error sit voluptatem
+                                        <a href="https://instagram.com/taxsmartpk?igshid=YmMyMTA2M2Y=" target="_blank">@Instagram</a>
                                     </p>
-                                    <span class="time">
-                                        <a href="javascript:void(0);">12 Mins ago</a>
-                                    </span>
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="https://youtube.com/channel/UC_XHxl8SIQ0mU_5Paz6mGZQ" target="_blank">@Youtube</a>
+                                    </p>
                                 </li>
                             </ul>
                         </section>
@@ -280,22 +266,19 @@
                             <h5 class="widget-title">Contact Info</h5>
                             <ul>
                                 <li>
-                                    <p>256 Notrh Tower, Western City Mid Town, Las Vagas, USA</p>
+                                    <p>Office # Building 5C, Ground Floor, Street # 17, Phase 6, DHA, Karachi.</p>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="callto://+00812568987789">+008 12568 987 789</a>
-                                    </p>
-                                    <p>
-                                        <a href="callto://+00835687567458">+008 35687 567 458</a>
+                                        <a href="callto://(+92) 317 5902778">(+92) 317 5902778</a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="mailto://info@Tax Smart PK.com">info@Tax Smart PK.com</a>
+                                        <a href="mailto://info@taxsmartpk.com">info@taxsmartpk.com</a>
                                     </p>
                                     <p>
-                                        <a href="mailto://info@Tax Smart PK.com">www.Tax Smart PK.com</a>
+                                        <a href="{{ url('') }}">www.TaxSmartPK.com</a>
                                     </p>
                                 </li>
                             </ul>
