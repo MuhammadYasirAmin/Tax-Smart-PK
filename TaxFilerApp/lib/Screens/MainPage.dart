@@ -1,10 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MainPage extends StatefulWidget {
@@ -16,6 +18,11 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage>
     with SingleTickerProviderStateMixin {
+  TextEditingController userName = new TextEditingController();
+  TextEditingController userEmail = new TextEditingController();
+  TextEditingController userPhone = new TextEditingController();
+  TextEditingController userCNIC = new TextEditingController();
+
   late AnimationController loadingController;
 
   File? _file;
@@ -120,6 +127,7 @@ class _MainPageState extends State<MainPage>
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
               ),
+              controller: userName,
             ),
           ),
           Container(
@@ -147,6 +155,7 @@ class _MainPageState extends State<MainPage>
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
               ),
+              controller: userEmail,
             ),
           ),
           Container(
@@ -165,6 +174,10 @@ class _MainPageState extends State<MainPage>
             alignment: Alignment.center,
             child: TextField(
               cursorColor: Color.fromARGB(255, 10, 129, 240),
+              keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+              ],
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.phone,
@@ -175,6 +188,7 @@ class _MainPageState extends State<MainPage>
                 focusedBorder: InputBorder.none,
                 // keyboardType: TextInputType.number,
               ),
+              controller: userPhone,
             ),
           ),
           Container(
@@ -193,6 +207,10 @@ class _MainPageState extends State<MainPage>
             alignment: Alignment.center,
             child: TextField(
               cursorColor: Color.fromARGB(255, 10, 129, 240),
+              keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+              ],
               decoration: InputDecoration(
                 icon: Icon(
                   Icons.perm_identity_sharp,
@@ -202,6 +220,7 @@ class _MainPageState extends State<MainPage>
                 enabledBorder: InputBorder.none,
                 focusedBorder: InputBorder.none,
               ),
+              controller: userCNIC,
             ),
           ),
           Column(
