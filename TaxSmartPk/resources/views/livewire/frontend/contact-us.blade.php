@@ -33,32 +33,32 @@
                             <h2>SEND A MESSAGE</h2>
                         </div>
                         <div class="pg-appintment__box">
-                            <form id="contact-form" action="mail.php" method="POST">
+                            <form id="contact-form" action="{{ route('Frontend.PostContact') }}" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="name" id="name" placeholder="Name">
+                                            <input type="text" name="UserName" id="name" placeholder="Name" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="email" name="email" id="email" placeholder="Email">
+                                            <input type="email" name="UserEmail" id="email" placeholder="Email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                                            <input type="text" name="UserSubject" id="subject" placeholder="Subject" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="phone" id="phone" placeholder="Phone">
+                                            <input type="text" name="UserPhone" id="phone" placeholder="Phone" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="single-input">
-                                            <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
+                                            <textarea name="UserMessage" cols="30" rows="5" placeholder="Message" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -93,7 +93,7 @@
                             totam rem </p>
                         <div class="pg-contact__blocks">
                             <div class="single-block address">
-                                <h6>address</h6>
+                                <h6>Address</h6>
                                 <p>256 Notrh Tower, Western City Mid Town, Las Vagas, USA</p>
                             </div>
                             <div class="single-block phone">

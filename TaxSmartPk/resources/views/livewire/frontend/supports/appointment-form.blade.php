@@ -30,52 +30,52 @@
                         <h2>MAKE AN APPOINTMENT</h2>
                     </div>
                     <div class="pg-appintment__box">
-                        <form action="#">
+                        <form action="{{ route('Frontend.PostAppointment') }}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="text" name="user-first-name" id="user-first-name"
-                                            placeholder="First Name">
+                                        <input type="text" name="FirstName" id="user-first-name"
+                                            placeholder="First Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="text" name="user-last-name" id="user-last-name"
-                                            placeholder="Last Name">
+                                        <input type="text" name="LastName" id="user-last-name"
+                                            placeholder="Last Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="email" name="user-email" id="user-email" placeholder="Email">
+                                        <input type="email" name="UserEmail" id="user-email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="text" name="user-phone" id="user-phone" placeholder="Phone">
+                                        <input type="text" name="UserPhone" id="user-phone" placeholder="Phone" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <select class="select2-another" name="user-select-advisor"
-                                            id="user-select-advisor">
-                                            <option value="0">Select Advisor</option>
-                                            <option value="1">Julia Anderson</option>
-                                            <option value="2">David Miller</option>
-                                            <option value="3">Simon De Andersom</option>
-                                            <option value="4">Martin Smith</option>
+                                        <select class="select2-another" name="SelectAdvisor"
+                                            id="user-select-advisor" required>
+                                            <option value="">Select Advisor</option>
+                                            <option value="Julia Anderson">Julia Anderson</option>
+                                            <option value="David Miller">David Miller</option>
+                                            <option value="Simon De Andersom">Simon De Andersom</option>
+                                            <option value="Martin Smith">Martin Smith</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="text" name="user-select-date" id="user-select-date"
-                                            placeholder="Select Date" data-select="datepicker">
+                                        <input type="text" name="SelectDate" id="user-select-date"
+                                            placeholder="Select Date" data-select="datepicker" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="single-input">
-                                        <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                                        <textarea cols="30" rows="5" placeholder="Message" name="UserMessage" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

@@ -15,6 +15,13 @@ class CreateAppointmentFormsTable extends Migration
     {
         Schema::create('appointment_forms', function (Blueprint $table) {
             $table->id();
+            $table->string('FirstName');
+            $table->string('LastName');
+            $table->string('UserEmail');
+            $table->bigInteger('UserPhone')->unsigned();
+            $table->string('SelectAdvisor');
+            $table->string('SelectDate');
+            $table->text('UserMessage');
             $table->timestamps();
         });
     }
