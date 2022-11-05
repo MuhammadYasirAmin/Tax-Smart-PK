@@ -39,6 +39,7 @@ dependencies:
   dotted_border: ^2.0.0+3
   iconsax: ^0.0.8
   http: ^0.13.5
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
