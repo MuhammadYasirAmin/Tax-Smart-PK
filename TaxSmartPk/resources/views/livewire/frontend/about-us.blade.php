@@ -12,8 +12,7 @@
                             <li>About</li>
                         </ul>
                         <h1>About Us</h1>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                            rem </p>
+                        <p>Offering smart and innovative services with top quality standards, through our great organizational structure</p>
                     </div>
                 </div>
             </div>
@@ -28,30 +27,26 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-10">
                 <div class="about-area__content2 text-center">
-                    <h4>WE ARE “
-                        <span class="color--theme">Tax Smart Pk</span>”
+                    <h4>"Tax Smart Pk
+                        <span class="color--theme"></span>”
                     </h4>
-                    <h3 class="cd-headline cx-heading slide">PROVIDE BEST TAX SOLUTION FOR YOUR
+                    <h3 class="cd-headline cx-heading slide">Providing Quality Tax Services For Over 10 Years.
                         <span class="color--theme cd-words-wrapper cd-words-wrapper-2">
-                            <b class="is-visible">Business</b>
-                            <b>Performance</b>
-                            <b>Success</b>
+                            <b class="is-visible"></b>
+                            <b></b>
+                            <b></b>
                         </span>
-                        TO GROWUP
+
                     </h3>
-                    <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium que laudantium, totam rem
-                        aperiam, eaque ipsa
-                        quae pursue pleasure rationally encounter consequences pursue pleasure rationally encounter
-                        consequencesp</p>
-                    <p>parchitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam tatem quia voluptas sit aspernatur
-                        aut odit aut fugit,
-                        sed quia tur magni dolores eos qui ratione voluptatem sequi nesciunt pursue pleasure rationally
-                        encounter consequences
-                        that are extremely painful pursue pleasure rationally encounter consequences that are extremely
-                        painful</p>
-                    <a href="javascript:void(0)" class="cr-readmore">
-                        <span>Read More</span>
-                    </a>
+                    <p>Tax Smart is part of Osama Qamar and Associates, it is a tax firm providing tax solutions to individuals
+                    /corporates for last 5 years. The firm was first founded by an income tax practioner Osama Qamar, who is also a
+                    senior member of Karachi Tax Bar Association. The firm is associated with Senior Advocates and CFA qualified people. </p>
+                    <p>Here at Tax Smart, we offer a variety of services that solves all your Tax related issues such as, filing of tax returns,
+                    filing of tax returns of individuals working in corporate sector, NTN/form 181 registration for individuals, response to notice received by individuals and many more.
+                        </p>
+                    <!--<a href="javascript:void(0)" class="cr-readmore">-->
+
+                    <!--</a>-->
                 </div>
             </div>
             <div class="col-lg-12">
@@ -83,8 +78,7 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">ENSURE SECURITY</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">Perspiciatis unde omnis ist natus error sit
-                        voluptatem accusantium loremque tium totam rem aperiam eaque </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">At Taxsmartpk we make sure that your important and sensitive data remains safe with us and no outsider gets access of it. </p>
                 </div>
             </div>
         </div>
@@ -105,8 +99,7 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">EXPERT TEAM</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">Perspiciatis unde omnis ist natus error sit
-                        voluptatem accusantium loremque tium totam rem aperiam eaque </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">Our team consists of extremely reliable professionals who have more than 10 years of experience in the area of taxation. </p>
                 </div>
             </div>
         </div>
@@ -127,8 +120,7 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">24/7 SUPPORT</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">Perspiciatis unde omnis ist natus error sit
-                        voluptatem accusantium loremque tium totam rem aperiam eaque </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">Get help from us anytime you want. Our customer service helpline is available 24/7 to answer all your queries. </p>
                 </div>
             </div>
         </div>
@@ -139,18 +131,17 @@
 <!--// Features Area -->
 
 <!-- Service Area -->
-<section id="service-area" class="service-area section-padding-top--xlg bg--white">
+<section id="service-area" class="service-area section-padding--xlg bg--white">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10">
                 <div class="section-title">
                     <h4>OUR SERVICES</h4>
-                    <h2>PROVIDE BEST
-                        <span class="color--theme">SERVICES</span>
+                    <h2>Committed To Helping You
+                        <span class="color--theme">Succeed.</span>
                     </h2>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque
-                        ipsa quae</p>
+                    <p>Effective tax management is the key to manage your wealth properly. Taxsmartpk helps you make the right financial decisions that will make a huge impact on your annual costs.
+                    Here are some of the best services that we offer regarding your tax needs.</p>
                 </div>
             </div>
         </div>
@@ -169,8 +160,7 @@
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">PERSONAL TAX</a>
                                     </h5>
-                                    <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
-                                        totam rem per </p>
+                                    <p>Minimizing your tax burdens  by advising and creating tax planning strategies that helps in filing your taxes. </p>
                                 </div>
                             </div>
                         </div>
@@ -186,8 +176,7 @@
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">CORPORATE TAX</a>
                                     </h5>
-                                    <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
-                                        totam rem per </p>
+                                    <p>Offering up to date corporate tax services for ensuring a smoother operation for emerging companies. </p>
                                 </div>
                             </div>
                         </div>
@@ -203,8 +192,7 @@
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">Business TAX</a>
                                     </h5>
-                                    <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
-                                        totam rem per </p>
+                                    <p>Providing a coordinated approach towards the filing of tax that helps transform the financial position of your company. </p>
                                 </div>
                             </div>
                         </div>
@@ -220,8 +208,7 @@
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>
                                     </h5>
-                                    <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium
-                                        totam rem per </p>
+                                    <p> Helping with your financial tax problems and creating a much more sophisticated tax system. </p>
                                 </div>
                             </div>
                         </div>
@@ -233,11 +220,11 @@
             <div class="col-lg-4">
                 <div class="service-area__bars text-center">
                     <div class="cr-bars justify-content-lg-end justify-content-center">
-                        <div class="cr-bar" data-bar-percent="25" data-bar-title="2013"></div>
-                        <div class="cr-bar" data-bar-percent="45" data-bar-title="2014"></div>
-                        <div class="cr-bar" data-bar-percent="37" data-bar-title="2015"></div>
-                        <div class="cr-bar" data-bar-percent="69" data-bar-title="2016"></div>
-                        <div class="cr-bar" data-bar-percent="88" data-bar-title="2017"></div>
+                            <div class="cr-bar" data-bar-percent="25" data-bar-title="2020"></div>
+                        <div class="cr-bar" data-bar-percent="45" data-bar-title="2021"></div>
+                        <div class="cr-bar" data-bar-percent="40" data-bar-title="2022"></div>
+                        <!--<div class="cr-bar" data-bar-percent="69" data-bar-title="2021"></div>-->
+                        <!--<div class="cr-bar" data-bar-percent="88" data-bar-title="2022"></div>-->
                     </div>
                     <span class="cr-bars__name">Our progress</span>
                 </div>
@@ -246,93 +233,6 @@
     </div>
 </section>
 <!--// Service Area -->
-
-<!-- Team Area -->
-<section id="team-area" class="advisor-area bg--white section-padding--xlg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10">
-                <div class="section-title text-center">
-                    <h4>OUR TEAM</h4>
-                    <h2>MEET OUR
-                        <span class="color--theme">TAX ADVISOR</span>
-                    </h2>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque
-                        ipsa quae</p>
-                </div>
-            </div>
-        </div>
-        <div class="row advisors">
-
-            <!-- Single Advisor -->
-            <div class="col-lg-3 col-sm-6">
-                <figure class="advisor">
-                    <div class="advisor__image">
-                        <img src="{{ asset('assets/images/advisors/advisor-1.webp') }}" alt="team member">
-                    </div>
-                    <figcaption class="advisor__content">
-                        <h6>
-                            <a href="advisor-details.html">SIMON DE ANDERSON</a>
-                        </h6>
-                        <p>Senior Advisor</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <!--// Single Advisor -->
-
-            <!-- Single Advisor -->
-            <div class="col-lg-3 col-sm-6">
-                <figure class="advisor">
-                    <div class="advisor__image">
-                        <img src="{{ asset('assets/images/advisors/advisor-2.webp') }}" alt="team member">
-                    </div>
-                    <figcaption class="advisor__content">
-                        <h6>
-                            <a href="advisor-details.html">JUlia ANDERSON</a>
-                        </h6>
-                        <p>Senior Advisor</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <!--// Single Advisor -->
-
-            <!-- Single Advisor -->
-            <div class="col-lg-3 col-sm-6">
-                <figure class="advisor">
-                    <div class="advisor__image">
-                        <img src="{{ asset('assets/images/advisors/advisor-3.webp') }}" alt="team member">
-                    </div>
-                    <figcaption class="advisor__content">
-                        <h6>
-                            <a href="advisor-details.html">David Miller</a>
-                        </h6>
-                        <p>Tax Advisor</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <!--// Single Advisor -->
-
-            <!-- Single Advisor -->
-            <div class="col-lg-3 col-sm-6">
-                <figure class="advisor">
-                    <div class="advisor__image">
-                        <img src="{{ asset('assets/images/advisors/advisor-4.webp') }}" alt="team member">
-                    </div>
-                    <figcaption class="advisor__content">
-                        <h6>
-                            <a href="advisor-details.html">Martin Smith</a>
-                        </h6>
-                        <p>Tax Advisor</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <!--// Single Advisor -->
-
-        </div>
-    </div>
-</section>
-<!--// Team Area -->
 
 <!-- Funfact Area -->
 <div id="funfact-area" class="funfact-area bg--white">
@@ -343,9 +243,9 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="funfact text-center">
                     <h1>
-                        <span class="counter">349</span>
+                        <span class="counter">750</span>
                     </h1>
-                    <h5>TRUSTED CLIENTS</h5>
+                    <h5>Trusted Clients</h5>
                 </div>
             </div>
             <!--//  Single Funfact -->
@@ -354,9 +254,9 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="funfact text-center">
                     <h1>
-                        <span class="counter">109</span>
+                        <span class="counter">600</span>
                     </h1>
-                    <h5>Awards Win</h5>
+                    <h5>Cases Won</h5>
                 </div>
             </div>
             <!--//  Single Funfact -->
@@ -365,9 +265,9 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="funfact text-center">
                     <h1>
-                        <span class="counter">459</span>
+                        <span class="counter">114</span>
                     </h1>
-                    <h5>Project Done</h5>
+                    <h5>Corporate Infrastructure</h5>
                 </div>
             </div>
             <!--//  Single Funfact -->
@@ -376,7 +276,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="funfact text-center">
                     <h1>
-                        <span class="counter">19</span>
+                        <span class="counter">9</span>
                     </h1>
                     <h5>Expert Advisor</h5>
                 </div>
@@ -388,8 +288,6 @@
 </div>
 <!--// Funfact Area -->
 
-
-
 <!-- Call To Action Area -->
 <section id="cta-area" class="cta-area section-padding--sm bg--grey--light bg--abstruct-mask">
 
@@ -397,15 +295,14 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="calltoaction text-center">
-                    <h3>NEED ANY HELP AT
-                        <span class="color--theme"> YOUR TAX SOLUTION?</span>
+                    <h3>GIVING YOU MORE
+                        <span class="color--theme"> FOR YOUR MONEY</span>
                     </h3>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque
-                        ipsa Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci </p>
-                    <h6>JUST DAIL
-                        <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)
-                    </h6>
+                    <p>Your one stop solution to all your tax related problems.
+                    Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your life easier and also to help you reach the top. </p>
+                    <!--<h6>JUST DAIL-->
+                    <!--    <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)-->
+                    <!--</h6>-->
                 </div>
             </div>
         </div>

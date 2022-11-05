@@ -10,8 +10,8 @@
                             <li>Contact</li>
                         </ul>
                         <h1>Contact Us</h1>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                            rem </p>
+                        <p>Want to get in touch with us? </p>
+                        <p>We would love to help you out.</p>
                     </div>
                 </div>
             </div>
@@ -38,22 +38,26 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="UserName" id="name" placeholder="Name" required>
+                                            <input type="text" name="UserName" id="name" placeholder="Name"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="email" name="UserEmail" id="email" placeholder="Email" required>
+                                            <input type="email" name="UserEmail" id="email" placeholder="Email"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="UserSubject" id="subject" placeholder="Subject" required>
+                                            <input type="text" name="UserSubject" id="subject"
+                                                placeholder="Subject" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="single-input">
-                                            <input type="text" name="UserPhone" id="phone" placeholder="Phone" required>
+                                            <input type="text" name="UserPhone" id="phone" placeholder="Phone"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -88,29 +92,29 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-9">
                     <div class="pg-contact__content">
-                        <h1>say hello to us</h1>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                            totam rem </p>
+                        <h1>Say hello to us</h1>
+                        <p>Reach our team and ask us anything you want. We would get back to you shortly. </p>
+
                         <div class="pg-contact__blocks">
                             <div class="single-block address">
-                                <h6>Address</h6>
-                                <p>256 Notrh Tower, Western City Mid Town, Las Vagas, USA</p>
+                                <h6>address</h6>
+                                <p>Office # Building 5C, Ground Floor, Street # 17, Phase 6, DHA, Karachi.</p>
                             </div>
                             <div class="single-block phone">
                                 <h6>Phone</h6>
-                                <p><a href="javascript:void(0)">+008 12568 987 789</a></p>
-                                <p><a href="javascript:void(0)">+008 35687 567 458</a></p>
+                                <p><a href="javascript:void(0)">+92 317 5902778</a></p>
+
                             </div>
                             <div class="single-block web">
                                 <h6>Web</h6>
-                                <p><a href="javascript:void(0)">info@taxco.com</a></p>
-                                <p><a href="javascript:void(0)">www@taxco.com</a></p>
+                                <p><a href="javascript:void(0)">info@taxsmartpk.com</a></p>
+                                <p><a href="javascript:void(0)">www.TaxSmartPK.com</a></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-8">
                                 <div class="pg-contact__newsletter">
-                                    <h5>also subscribe our newsletter to be uptodae</h5>
+                                    <h5> Subscribe to our newsletter</h5>
                                     <form
                                         action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
                                         method="post" target="_blank">
@@ -137,11 +141,11 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="calltoaction text-center">
-                    <h3>NEED ANY HELP AT<span class="color--theme"> YOUR TAX SOLUTION?</span></h3>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                        consectetur, adipisci </p>
-                    <h6>JUST DAIL <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)</h6>
+                    <h3>GIVING YOU <span class="color--theme"> MORE YOUR MONEY</span></h3>
+                    <p>Your one stop solution to all your tax related problems.
+                        Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
+                        life easier and also to help you reach the top. </p>
+                    <!--<h6>JUST DAIL <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)</h6>-->
                 </div>
             </div>
         </div>

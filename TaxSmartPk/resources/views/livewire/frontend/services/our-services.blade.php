@@ -12,8 +12,8 @@
                             <li>Services</li>
                         </ul>
                         <h1>Our Services</h1>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                            rem </p>
+                        <p>Our top quality services let's you explore the world of taxes and then develop the best tax
+                            strategies that suits you. </p>
                     </div>
                 </div>
             </div>
@@ -35,16 +35,13 @@
                         <h3>WE PROVIDE BEST
                             <span class="color--theme">SERVICES FOR YOU</span>
                         </h3>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                            totam rem aperiam, eaque
-                            ipsa quae </p>
-                        <p>perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam rem
-                            aperiam eaque numquam
-                            eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
-                            minima veniam,</p>
-                        <p>perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam rem
-                            aperiam eaque numquam
-                            eius modi tempora incidunt ut labore</p>
+                        <p>Effective tax management is the key to manage your wealth properly. Taxsmartpk helps you make
+                            the right financial decisions that will make a huge impact on your annual costs. </p>
+                        <p>We provide comprehensive and strategic tax assistance that would help you with your tax
+                            troubles.
+                            Our team is full of competent people with over 10 years of experience in the tax industry.
+                            They will make sure to cater to all your needs.</p>
+                        <p>Here are some of the best services that we offer regarding your tax needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
@@ -72,8 +69,8 @@
                             <h5>
                                 <a href="{{ route('Frontend.TaxServices') }}">PERSONAL TAX</a>
                             </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
+                            <p>Minimizing your tax burdens by advising and creating tax planning strategies that helps
+                                in filing your taxes. </p>
                         </div>
                     </div>
                 </div>
@@ -89,79 +86,79 @@
                             <h5>
                                 <a href="{{ route('Frontend.TaxServices') }}">CORPORATE TAX</a>
                             </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
+                            <p>Offering up to date corporate tax services for ensuring a smoother operation for emerging
+                                companies. </p>
                         </div>
                     </div>
                 </div>
                 <!--// Single Service -->
 
                 <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">PROPERTY TAX</a>
-                            </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 wow flipInX">-->
+                <!--    <div class="service">-->
+                <!--        <div class="service__icon">-->
+                <!--            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">-->
+                <!--        </div>-->
+                <!--        <div class="service__content">-->
+                <!--            <h5>-->
+                <!--                <a href="{{ route('Frontend.TaxServices') }}">PROPERTY TAX</a>-->
+                <!--            </h5>-->
+                <!--            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam-->
+                <!--                rem per </p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <!--// Single Service -->
 
                 <!-- Single Service -->
                 <div class="col-lg-4 col-md-6 wow flipInX">
                     <div class="service">
                         <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-briefcase.webp') }}" alt="service icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-briefcase.webp') }}"
+                                alt="service icon">
                         </div>
                         <div class="service__content">
                             <h5>
                                 <a href="{{ route('Frontend.TaxServices') }}">Business TAX</a>
                             </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
+                            <p>Providing a coordinated approach towards the filing of tax that helps transform the
+                                financial position of your company. </p>
                         </div>
                     </div>
                 </div>
                 <!--// Single Service -->
 
                 <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}" alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">International TAX</a>
-                            </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 wow flipInX">-->
+                <!--    <div class="service">-->
+                <!--        <div class="service__icon">-->
+                <!--            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}" alt="service icon">-->
+                <!--        </div>-->
+                <!--        <div class="service__content">-->
+                <!--            <h5>-->
+                <!--                <a href="{{ route('Frontend.TaxServices') }}">International TAX</a>-->
+                <!--            </h5>-->
+                <!--            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam-->
+                <!--                rem per </p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <!--// Single Service -->
 
                 <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>
-                            </h5>
-                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam
-                                rem per </p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 wow flipInX">-->
+                <!--    <div class="service">-->
+                <!--        <div class="service__icon">-->
+                <!--            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">-->
+                <!--        </div>-->
+                <!--        <div class="service__content">-->
+                <!--            <h5>-->
+                <!--                <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>-->
+                <!--            </h5>-->
+                <!--            <p>Helping with your financial tax problems and creating a much more sophisticated tax system. </p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <!--// Single Service -->
 
             </div>
@@ -178,12 +175,10 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="section-title no-padding">
-                    <h2>WHAT
-                        <span class="color--theme">CLIENTS SAY</span>
+                    <h2>WHAT OUR
+                        <span class="color--theme">CLIENTS SAY ABOUT US</span>
                     </h2>
-                    <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanti, totam
-                        rem aperiam, eaque
-                        ipsa quae so something new for tax calculation </p>
+                    <p>Take a look at our happy customers sharing their positive experience with Tax Smart. </p>
                 </div>
             </div>
 
@@ -195,9 +190,10 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>Tax smart is the most competent website that I have come across. They are extremely
+                                efficient at what they do.
+                                They helped me get my financial poisition back on track within a small period of time.
+                            </p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -209,7 +205,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>SHON SMITH</h6>
-                                <span>President</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -222,9 +218,9 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>I contacted Taxsmartpk and they responded very quickly.
+                                They listened to all my problems patiently and provided me with the most suitable
+                                solution that helped me elevate my business even more.</p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -236,7 +232,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>RAISA MARIYA</h6>
-                                <span>Ceo</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -249,9 +245,9 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>After working with Tax smart, my tax filing system is very organised and I am able to
+                                find any relevant information easily.
+                                They made tax filing much much easier and I am extremely grateful for that.</p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -263,7 +259,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>John Patrik</h6>
-                                <span>Executive</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -276,9 +272,10 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>Tax smart is the most competent website that I have come across. They are extremely
+                                efficient at what they do.
+                                They helped me get my financial poisition back on track within a small period of time.
+                            </p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -290,7 +287,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>SHON SMITH</h6>
-                                <span>President</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -303,9 +300,9 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>I contacted Taxsmartpk and they responded very quickly.
+                                They listened to all my problems patiently and provided me with the most suitable
+                                solution that helped me elevate my business even more.</p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -317,7 +314,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>RAISA MARIYA</h6>
-                                <span>Ceo</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -330,9 +327,9 @@
 
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
-                            <p>parchitecto beatae vitae dicta sunt abo no enim ipsam voluptatem quia voluptas sit rnatur
-                                aut odit aut fugit, sed
-                                quia</p>
+                            <p>After working with Tax smart, my tax filing system is very organised and I am able to
+                                find any relevant information easily.
+                                They made tax filing much much easier and I am extremely grateful for that.</p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -344,7 +341,7 @@
                             </div>
                             <div class="testimonial__author__description">
                                 <h6>John Patrik</h6>
-                                <span>Executive</span>
+                                <span>Client</span>
                             </div>
                         </div>
                         <!--// Single Author -->
@@ -366,15 +363,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="calltoaction text-center">
-                    <h3>NEED ANY HELP AT
-                        <span class="color--theme"> YOUR TAX SOLUTION?</span>
+                    <h3>GIVING YOU MORE
+                        <span class="color--theme"> FOR YOUR MONEY</span>
                     </h3>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque
-                        ipsa Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci </p>
-                    <h6>JUST DAIL
-                        <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)
-                    </h6>
+                    <p>Your one stop solution to all your tax related problems.
+                        Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
+                        life easier and also to help you reach the top. </p>
+                    <!--<h6>JUST DAIL-->
+                    <!--    <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)-->
+                    <!--</h6>-->
                 </div>
             </div>
         </div>
