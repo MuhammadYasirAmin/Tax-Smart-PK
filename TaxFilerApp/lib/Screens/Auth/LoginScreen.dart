@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tax_filer_app/Screens/Auth/SignUpScreen.dart';
+import 'package:tax_filer_app/Screens/Main/MainPage.dart';
 import 'package:tax_filer_app/Services/App-Apis.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -13,8 +14,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
+  String result = '';
 
   @override
   void initState() {
@@ -38,17 +40,14 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 25.0),
-                  child: Center(
-                    child: Image.asset(
-                      "assets/Images/logo.png",
-                      height: 150,
-                      width: 150,
-                    ),
+                Center(
+                  child: Image.asset(
+                    "assets/Images/logo.png",
+                    height: 170,
+                    width: 170,
                   ),
                 ),
-                SizedBox(height: 75),
+                SizedBox(height: 50),
                 Text(
                   'Hello Again!',
                   style: GoogleFonts.bebasNeue(
@@ -112,9 +111,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: GestureDetector(
                     onTap: () async {
-                      var result = await IntegrateApis().login(
+                      result = await IntegrateApis().login(
                           _emailController.text.trim(),
                           _passwordController.text.trim());
+                      setState(() {});
+                      print(result);
+                      if (result == '200') {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MainPage()));
+                      }
                     },
                     child: Container(
                       padding: EdgeInsets.all(20),

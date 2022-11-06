@@ -5,8 +5,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:tax_filer_app/Screens/Auth/Auth.dart';
 import 'package:tax_filer_app/Screens/Auth/LoginScreen.dart';
-// import 'package:tax_filer_app/Screens/Auth/LoginScreen.dart';
-import 'package:tax_filer_app/Screens/Auth/SignUpScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   mainPageRoute() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+        context, MaterialPageRoute(builder: (context) => LoginScreen()));
   }
 
   @override
@@ -43,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 89, 163, 231),
+              color: Colors.grey[200],
             ),
           ),
           Center(

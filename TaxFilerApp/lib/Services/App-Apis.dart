@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class IntegrateApis {
-  final login_Api = 'http://127.0.0.1:8000/api/login';
-  final register_Api = 'http://localhost:8000/api/register';
+  final login_Api = 'https://taxsmartpk.com/api/login';
+  final register_Api = 'https://taxsmartpk.com/api/register';
 
   Future<String> login(_userEmail, _userPassword) async {
     try {
@@ -14,6 +14,7 @@ class IntegrateApis {
         'UserEmail': _userEmail,
         'UserPassword': _userPassword,
       });
+      print(response);
 
       if (response.statusCode == 200) {
         final result = json.decode(response.body);
@@ -36,16 +37,13 @@ class IntegrateApis {
         'UserCnic': _userCnic,
         'UserName': _userName,
       });
-      print(response);
       if (response.statusCode == 200) {
         final result = json.decode(response.body);
-        print(result);
-        return result;
+        return response.statusCode.toString();
       } else {
         return 'Server Error';
       }
     } catch (e) {
-      print(e);
       return e.toString();
     }
   }

@@ -18,11 +18,6 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage>
     with SingleTickerProviderStateMixin {
-  TextEditingController userName = new TextEditingController();
-  TextEditingController userEmail = new TextEditingController();
-  TextEditingController userPhone = new TextEditingController();
-  TextEditingController userCNIC = new TextEditingController();
-
   late AnimationController loadingController;
 
   File? _file;
@@ -119,127 +114,6 @@ class _MainPageState extends State<MainPage>
                   )
                 ],
               ),
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 30),
-            padding: EdgeInsets.only(left: 20, right: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: Colors.grey[200],
-              boxShadow: [
-                BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 50,
-                    color: Color(0xffEEEEEE))
-              ],
-            ),
-            alignment: Alignment.center,
-            child: TextField(
-              cursorColor: Color.fromARGB(255, 10, 129, 240),
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.supervised_user_circle,
-                  color: Color.fromARGB(255, 10, 129, 240),
-                ),
-                hintText: "Enter Full Name",
-                enabledBorder: InputBorder.none,
-                focusedBorder: InputBorder.none,
-              ),
-              controller: userName,
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-            padding: EdgeInsets.only(left: 20, right: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: Colors.grey[200],
-              boxShadow: [
-                BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 50,
-                    color: Color(0xffEEEEEE))
-              ],
-            ),
-            alignment: Alignment.center,
-            child: TextField(
-              cursorColor: Color.fromARGB(255, 10, 129, 240),
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.email,
-                  color: Color.fromARGB(255, 10, 129, 240),
-                ),
-                hintText: "Enter Email Address",
-                enabledBorder: InputBorder.none,
-                focusedBorder: InputBorder.none,
-              ),
-              controller: userEmail,
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-            padding: EdgeInsets.only(left: 20, right: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: Colors.grey[200],
-              boxShadow: [
-                BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 50,
-                    color: Color(0xffEEEEEE))
-              ],
-            ),
-            alignment: Alignment.center,
-            child: TextField(
-              cursorColor: Color.fromARGB(255, 10, 129, 240),
-              keyboardType: TextInputType.number,
-              inputFormatters: <TextInputFormatter>[
-                FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-              ],
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.phone,
-                  color: Color.fromARGB(255, 10, 129, 240),
-                ),
-                hintText: "Enter Phone Number",
-                enabledBorder: InputBorder.none,
-                focusedBorder: InputBorder.none,
-                // keyboardType: TextInputType.number,
-              ),
-              controller: userPhone,
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.only(left: 20, right: 20, top: 20),
-            padding: EdgeInsets.only(left: 20, right: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: Colors.grey[200],
-              boxShadow: [
-                BoxShadow(
-                    offset: Offset(0, 10),
-                    blurRadius: 50,
-                    color: Color(0xffEEEEEE))
-              ],
-            ),
-            alignment: Alignment.center,
-            child: TextField(
-              cursorColor: Color.fromARGB(255, 10, 129, 240),
-              keyboardType: TextInputType.number,
-              inputFormatters: <TextInputFormatter>[
-                FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-              ],
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.perm_identity_sharp,
-                  color: Color.fromARGB(255, 10, 129, 240),
-                ),
-                hintText: "Enter CNIC Number",
-                enabledBorder: InputBorder.none,
-                focusedBorder: InputBorder.none,
-              ),
-              controller: userCNIC,
             ),
           ),
           Column(

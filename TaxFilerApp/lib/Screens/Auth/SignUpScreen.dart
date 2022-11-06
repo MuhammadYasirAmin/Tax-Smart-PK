@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tax_filer_app/Screens/Auth/LoginScreen.dart';
 import 'package:tax_filer_app/Services/App-Apis.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -18,6 +19,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController _passwordController = TextEditingController();
   TextEditingController _cnicController = TextEditingController();
   String result = '';
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _emailController.dispose();
+    _phoneController.dispose();
+    _passwordController.dispose();
+    _cnicController.dispose();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -167,7 +183,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         _nameController.text.trim(),
                       );
                       setState(() {});
-                      print(result);
+                      // print(result);
+                      if (result == '200') {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginScreen()));
+                      }
                     },
                     child: Container(
                       padding: EdgeInsets.all(20),
