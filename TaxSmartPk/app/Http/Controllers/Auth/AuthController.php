@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
 class AuthController extends Controller
 {
     //
@@ -25,10 +24,10 @@ class AuthController extends Controller
         }
 
         $user = new User();
-        $user->UserName = $request->UserName;
-        $user->UserEmail = $request->UserEmail;
+        $user->name = $request->UserName;
+        $user->email = $request->UserEmail;
         $user->UserPhone = $request->UserPhone;
-        $user->UserPassword = Hash::make($request->UserPassword);
+        $user->password = bcrypt($request->UserPassword);
         $user->UserCnic = $request->UserCnic;
 
         if ($user->save()) {
@@ -49,19 +48,17 @@ class AuthController extends Controller
             return response()->json(['status_code' => 400, 'message' => 'Bad Request => Validations Failed']);
         }
 
-        // $credentials = request(['UserEmail','UserPassword']);
-
-        if (!Auth::attempt(['UserEmail','UserPassword'])) {
+        if (!Auth::attempt(array('email' => $request->UserEmail, 'password' => $request->UserPassword))) {
             return response()->json([
                 'status_code' => 500,
                 'message' => 'Unauthorized'
             ]);
         }
 
-        $user = User::where('UserEmail', $request->UserEmail )->first();
+        $user = User::where('email', $request->UserEmail)->first();
 
         if ($user) {
-            if (Hash::check($request->UserPassword, $user->UserPassword)) {
+            if (Hash::check($request->UserPassword, $user->password)) {
                 $tokenResult = $user->createToken('authToken')->plainTextToken;
 
                 if ($tokenResult) {

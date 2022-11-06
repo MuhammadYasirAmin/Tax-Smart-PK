@@ -140,10 +140,10 @@
 
                 <ul class="offcanvas__info">
                     <li>
-                        <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> 01354 568 787</a>
+                        <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> +92 317 5902778</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i> info@taxco.com</a>
+                        <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i> info@taxsmartpk.com</a>
                     </li>
                 </ul>
 
@@ -198,9 +198,7 @@
                         <!-- Single Widget -->
                         <section class="widget widget-about">
                             <h5 class="widget-title">ABOUT TaxSmartPK</h5>
-                            <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium oloremque laudantium,
-                                totam rem onsectetur sires
-                                to obtain pain of itself because</p>
+                            <p>Offering smart and innovative services with top quality standards, through our great organizational structure</p>
                             <div class="social-icons social-icons--rounded">
                                 <ul>
                                     <li class="facebook">

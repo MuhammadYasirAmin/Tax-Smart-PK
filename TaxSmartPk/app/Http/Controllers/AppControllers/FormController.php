@@ -28,34 +28,15 @@ class FormController extends Controller
     public function create(Request $request)
     {
         //
-        $lastFormInfo = AppForm::orderBy('id', 'DESC')->first();
-        $L_FID = 0;
-        if ($lastFormInfo == null) {
-            $L_FID = 1;
-        } else {
-            $L_FID = $lastFormInfo->id + 1;
-        }
-        $AppFormInfo = new AppForm();
-        $AppFormInfo->UserName = $request->UserName;
-        $AppFormInfo->UserEmail = $request->UserEmail;
-        $AppFormInfo->UserPhone = $request->UserPhone;
-        $AppFormInfo->UserCNIC = $request->UserCNIC;
+        // $lastFormInfo = AppForm::orderBy('id', 'DESC')->first();
+        // $L_FID = 0;
+        // if ($lastFormInfo == null) {
+        //     $L_FID = 1;
+        // } else {
+        //     $L_FID = $lastFormInfo->id + 1;
+        // }
 
-        if ($AppFormInfo->save()) {
-            $Form_ID = $AppFormInfo->id;
-            $AppFormInfo = AppForm::find($Form_ID);
-            $AppFormImages = new AppFormImages();
-
-            foreach ($request->file('UserImages') as $key => $ImageFile) {
-                $imageGalleryName = $ImageFile->getClientOriginalName();
-                $ImageFile->move(public_path('Uploads/AppInfo/'.$L_FID.'/'), $imageGalleryName);
-                if ($ImageFile) {
-                    $insertQuery = "INSERT INTO `app_form_images`(`UserImages`, `form_id`) VALUES ('". $imageGalleryName ."','".$Form_ID."')";
-                    DB::insert($insertQuery);
-                }
-            }
-            return response()->json([$request->UserName." Thank You For Contacting Us. We'll response ASAP."]);
-        }
+        $AppFormImages = new AppFormImages();
     }
 
     /**
@@ -64,9 +45,30 @@ class FormController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function StoreImages(Request $request)
     {
         //
+        if (!$request->hasFile('UserImages')) {
+            return response()->json(['upload_file_not_found'], 400);
+        }
+
+        $flag = false;
+
+        foreach ($request->file('UserImages') as $key => $ImageFile) {
+            $imageGalleryName = $ImageFile->getClientOriginalName();
+            $ImageFile->move(public_path('/Uploads/AppInfo/1/'), $imageGalleryName);
+            if ($ImageFile) {
+                $insertQuery = "INSERT INTO `app_form_images`(`UserImages`, `form_id`) VALUES ('". $imageGalleryName ."','1')";
+                DB::insert($insertQuery);
+                $flag = true;
+            }
+        }
+
+        if ($flag) {
+            return response()->json([" Thank You For Contacting Us. We'll response ASAP."], 200);
+        } else {
+            return response()->json(["Files are not Uploaded. Error!"], 400);
+        }
     }
 
     /**

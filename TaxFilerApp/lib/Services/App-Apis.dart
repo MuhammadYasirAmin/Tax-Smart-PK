@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 class IntegrateApis {
   final login_Api = 'https://taxsmartpk.com/api/login';
   final register_Api = 'https://taxsmartpk.com/api/register';
+  final submit_Api = 'https://taxsmartpk.com/api/App-Info/Post-Data';
 
   Future<String> login(_userEmail, _userPassword) async {
     try {
@@ -18,7 +19,7 @@ class IntegrateApis {
 
       if (response.statusCode == 200) {
         final result = json.decode(response.body);
-        return result;
+        return result['status_code'].toString();
       } else {
         return 'Server Error';
       }
@@ -42,6 +43,22 @@ class IntegrateApis {
         return response.statusCode.toString();
       } else {
         return 'Server Error';
+      }
+    } catch (e) {
+      return e.toString();
+    }
+  }
+
+  Future Submit(List _pictures) async {
+    try {
+      print(_pictures.toString());
+      final response = await http.post(Uri.parse(submit_Api),
+          body: {'UserImages': _pictures.toString()});
+      if (response.statusCode == 200) {
+        final result = json.decode(response.body);
+        return response.statusCode.toString();
+      } else {
+        return response;
       }
     } catch (e) {
       return e.toString();

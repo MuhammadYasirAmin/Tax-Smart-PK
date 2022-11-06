@@ -8,6 +8,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:tax_filer_app/Services/App-Apis.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -45,8 +46,8 @@ class _MainPageState extends State<MainPage>
 
       setState(() {
         //  addmapdata();
-        print('List ${files}');
-        print('Result file is ${file.files}');
+        print('List ${files[0]['path']}');
+        // print('Result file is ${file.files[0].path}');
 
         // print('name ${file}');
         // displayfilename = file.name.toString();
@@ -278,8 +279,12 @@ class _MainPageState extends State<MainPage>
                   : Container(),
             ],
           ),
-          GestureDetector(
-            onTap: () => {},
+          InkWell(
+            onTap: () {
+              IntegrateApis().Submit(files).then((value) {
+                print(value.toString());
+              });
+            },
             child: Container(
               margin: EdgeInsets.only(left: 20, right: 20, top: 20),
               padding: EdgeInsets.only(left: 20, right: 20),
