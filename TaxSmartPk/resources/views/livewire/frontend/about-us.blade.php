@@ -12,7 +12,8 @@
                             <li>About</li>
                         </ul>
                         <h1>About Us</h1>
-                        <p>Offering smart and innovative services with top quality standards, through our great organizational structure</p>
+                        <p>Offering smart and innovative services with top quality standards, through our great
+                            organizational structure</p>
                     </div>
                 </div>
             </div>
@@ -38,12 +39,17 @@
                         </span>
 
                     </h3>
-                    <p>Tax Smart is part of Osama Qamar and Associates, it is a tax firm providing tax solutions to individuals
-                    /corporates for last 5 years. The firm was first founded by an income tax practioner Osama Qamar, who is also a
-                    senior member of Karachi Tax Bar Association. The firm is associated with Senior Advocates and CFA qualified people. </p>
-                    <p>Here at Tax Smart, we offer a variety of services that solves all your Tax related issues such as, filing of tax returns,
-                    filing of tax returns of individuals working in corporate sector, NTN/form 181 registration for individuals, response to notice received by individuals and many more.
-                        </p>
+                    <p>Tax Smart is part of Osama Qamar and Associates, it is a tax firm providing tax solutions to
+                        individuals
+                        /corporates for last 5 years. The firm was first founded by an income tax practioner Osama
+                        Qamar, who is also a
+                        senior member of Karachi Tax Bar Association. The firm is associated with Senior Advocates and
+                        CFA qualified people. </p>
+                    <p>Here at Tax Smart, we offer a variety of services that solves all your Tax related issues such
+                        as, filing of tax returns,
+                        filing of tax returns of individuals working in corporate sector, NTN/form 181 registration for
+                        individuals, response to notice received by individuals and many more.
+                    </p>
                     <!--<a href="javascript:void(0)" class="cr-readmore">-->
 
                     <!--</a>-->
@@ -78,7 +84,8 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">ENSURE SECURITY</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">At Taxsmartpk we make sure that your important and sensitive data remains safe with us and no outsider gets access of it. </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">At Taxsmartpk we make sure that your important and
+                        sensitive data remains safe with us and no outsider gets access of it. </p>
                 </div>
             </div>
         </div>
@@ -99,7 +106,8 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">EXPERT TEAM</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">Our team consists of extremely reliable professionals who have more than 10 years of experience in the area of taxation. </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">Our team consists of extremely reliable professionals
+                        who have more than 10 years of experience in the area of taxation. </p>
                 </div>
             </div>
         </div>
@@ -120,7 +128,8 @@
                     <h4 class="wow fadeInUp">
                         <a href="{{ route('Frontend.features') }}">24/7 SUPPORT</a>
                     </h4>
-                    <p class="wow fadeInUp" data-wow-delay="0.15s">Get help from us anytime you want. Our customer service helpline is available 24/7 to answer all your queries. </p>
+                    <p class="wow fadeInUp" data-wow-delay="0.15s">Get help from us anytime you want. Our customer
+                        service helpline is available 24/7 to answer all your queries. </p>
                 </div>
             </div>
         </div>
@@ -140,8 +149,9 @@
                     <h2>Committed To Helping You
                         <span class="color--theme">Succeed.</span>
                     </h2>
-                    <p>Effective tax management is the key to manage your wealth properly. Taxsmartpk helps you make the right financial decisions that will make a huge impact on your annual costs.
-                    Here are some of the best services that we offer regarding your tax needs.</p>
+                    <p>Effective tax management is the key to manage your wealth properly. Taxsmartpk helps you make the
+                        right financial decisions that will make a huge impact on your annual costs.
+                        Here are some of the best services that we offer regarding your tax needs.</p>
                 </div>
             </div>
         </div>
@@ -154,13 +164,15 @@
                         <div class="col-lg-6 col-md-6 wow flipInX">
                             <div class="service">
                                 <div class="service__icon">
-                                    <img src="{{ asset('assets/images/icons/service-icon-user.webp') }}" alt="service icon">
+                                    <img src="{{ asset('assets/images/icons/service-icon-user.webp') }}"
+                                        alt="service icon">
                                 </div>
                                 <div class="service__content">
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">PERSONAL TAX</a>
                                     </h5>
-                                    <p>Minimizing your tax burdens  by advising and creating tax planning strategies that helps in filing your taxes. </p>
+                                    <p>Minimizing your tax burdens by advising and creating tax planning strategies that
+                                        helps in filing your taxes. </p>
                                 </div>
                             </div>
                         </div>
@@ -170,13 +182,15 @@
                         <div class="col-lg-6 col-md-6 wow flipInX">
                             <div class="service">
                                 <div class="service__icon">
-                                    <img src="{{ asset('assets/images/icons/service-icon-bar.webp') }}" alt="service icon">
+                                    <img src="{{ asset('assets/images/icons/service-icon-bar.webp') }}"
+                                        alt="service icon">
                                 </div>
                                 <div class="service__content">
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">CORPORATE TAX</a>
                                     </h5>
-                                    <p>Offering up to date corporate tax services for ensuring a smoother operation for emerging companies. </p>
+                                    <p>Offering up to date corporate tax services for ensuring a smoother operation for
+                                        emerging companies. </p>
                                 </div>
                             </div>
                         </div>
@@ -186,13 +200,15 @@
                         <div class="col-lg-6 col-md-6 wow flipInX">
                             <div class="service">
                                 <div class="service__icon">
-                                    <img src="{{ asset('assets/images/icons/service-icon-briefcase.webp') }}" alt="service icon">
+                                    <img src="{{ asset('assets/images/icons/service-icon-briefcase.webp') }}"
+                                        alt="service icon">
                                 </div>
                                 <div class="service__content">
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">Business TAX</a>
                                     </h5>
-                                    <p>Providing a coordinated approach towards the filing of tax that helps transform the financial position of your company. </p>
+                                    <p>Providing a coordinated approach towards the filing of tax that helps transform
+                                        the financial position of your company. </p>
                                 </div>
                             </div>
                         </div>
@@ -202,13 +218,15 @@
                         <div class="col-lg-6 col-md-6 wow flipInX">
                             <div class="service">
                                 <div class="service__icon">
-                                    <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
+                                    <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}"
+                                        alt="service icon">
                                 </div>
                                 <div class="service__content">
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">Finance TAX</a>
                                     </h5>
-                                    <p> Helping with your financial tax problems and creating a much more sophisticated tax system. </p>
+                                    <p> Helping with your financial tax problems and creating a much more sophisticated
+                                        tax system. </p>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +238,7 @@
             <div class="col-lg-4">
                 <div class="service-area__bars text-center">
                     <div class="cr-bars justify-content-lg-end justify-content-center">
-                            <div class="cr-bar" data-bar-percent="25" data-bar-title="2020"></div>
+                        <div class="cr-bar" data-bar-percent="25" data-bar-title="2020"></div>
                         <div class="cr-bar" data-bar-percent="45" data-bar-title="2021"></div>
                         <div class="cr-bar" data-bar-percent="40" data-bar-title="2022"></div>
                         <!--<div class="cr-bar" data-bar-percent="69" data-bar-title="2021"></div>-->
@@ -299,7 +317,8 @@
                         <span class="color--theme"> FOR YOUR MONEY</span>
                     </h3>
                     <p>Your one stop solution to all your tax related problems.
-                    Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your life easier and also to help you reach the top. </p>
+                        Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
+                        life easier and also to help you reach the top. </p>
                     <!--<h6>JUST DAIL-->
                     <!--    <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)-->
                     <!--</h6>-->

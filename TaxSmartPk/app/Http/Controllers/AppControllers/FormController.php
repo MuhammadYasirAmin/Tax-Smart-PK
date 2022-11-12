@@ -5,7 +5,7 @@ namespace App\Http\Controllers\AppControllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\AppModels\AppForm;
+use App\Models\User;
 use App\Models\AppModels\AppFormImages;
 
 class FormController extends Controller
@@ -36,7 +36,7 @@ class FormController extends Controller
         //     $L_FID = $lastFormInfo->id + 1;
         // }
 
-        $AppFormImages = new AppFormImages();
+        // $AppFormImages = new AppFormImages();
     }
 
     /**
@@ -45,7 +45,7 @@ class FormController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function StoreImages(Request $request)
+    public function store(Request $request)
     {
         //
         if (!$request->hasFile('UserImages')) {
@@ -53,22 +53,34 @@ class FormController extends Controller
         }
 
         $flag = false;
+        $lastFormInfo = User::orderBy('id', 'DESC')->first();
+        $L_FID = 0;
+        if ($lastFormInfo == null) {
+            $L_FID = 1;
+        } else {
+            $L_FID = $lastFormInfo->id + 1;
+        }
 
-        foreach ($request->file('UserImages') as $key => $ImageFile) {
+        foreach ($request->file('UserImages') as $ImageFile) {
             $imageGalleryName = $ImageFile->getClientOriginalName();
-            $ImageFile->move(public_path('/Uploads/AppInfo/1/'), $imageGalleryName);
+            $ImageFile->move(public_path('Uploads/AppInfo/'.$L_FID.'/'), $imageGalleryName);
+
             if ($ImageFile) {
-                $insertQuery = "INSERT INTO `app_form_images`(`UserImages`, `form_id`) VALUES ('". $imageGalleryName ."','1')";
+                $insertQuery = "INSERT INTO `app_form_images`(`UserImages`, `user_id`) VALUES ('". $imageGalleryName ."', '". $L_FID ."')";
                 DB::insert($insertQuery);
                 $flag = true;
+            } else {
+                return response()->json(["Files are not Save on Server. Error!"], 400);
             }
         }
 
-        if ($flag) {
-            return response()->json([" Thank You For Contacting Us. We'll response ASAP."], 200);
-        } else {
+        // return response()->json($request->all());
+
+        if (!$flag) {
             return response()->json(["Files are not Uploaded. Error!"], 400);
         }
+
+        return response()->json([" Thank You For Contacting Us. We'll response ASAP."], 200);
     }
 
     /**

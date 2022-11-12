@@ -9,6 +9,7 @@ use App\Http\Livewire\Frontend\Services\OurServices;
 use App\Http\Livewire\Frontend\Services\TaxService;
 use App\Http\Livewire\Frontend\Advisors\OurAdvisors;
 use App\Http\Livewire\Frontend\Supports\AppointmentForm;
+use App\Http\Livewire\Frontend\Supports\OurProcess;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/', HomePage::class, )->name('Frontend.index');
 Route::get('/Our-Features', OurFeatures::class, )->name('Frontend.features');
 Route::get('/About-Us', AboutUs::class, )->name('Frontend.AboutUs');
 Route::get('/Supports/Contact-Us', ContactUs::class, )->name('Frontend.ContactUs');
+Route::get('/Supports/Our-Process', OurProcess::class, )->name('Frontend.Process');
 Route::post('/Supports/Contact-Us/Submit-Form', [ContactUs::class, 'submitContact'] )->name('Frontend.PostContact');
 Route::get('/Supports/Appointment-Form', AppointmentForm::class, )->name('Frontend.Appointment');
 Route::post('/Supports/Appointment-Form/Submit-Form', [AppointmentForm::class, 'submitAppointments'] )->name('Frontend.PostAppointment');

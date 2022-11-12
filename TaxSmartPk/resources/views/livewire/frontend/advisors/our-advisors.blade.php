@@ -20,8 +20,66 @@
     <!--// Breadcrumb Area -->
 @endsection
 
+<section id="about-area" class="cr-section about-area bg--white section-padding--md">
+    <div class="container">
+        <div class="row align-items-center">
+            <h4 class="text-center">WE ARE “
+                <span class="color--theme">Tax Smart PK</span>”
+            </h4>
+            <h3 class="cd-headline cx-heading slide text-center">PROVIDE BEST TAX SOLUTION FOR YOUR
+                <span class="color--theme cd-words-wrapper cd-words-wrapper-2" style="width: 207.641px;">
+                    <b class="is-hidden">Business</b>
+                    <b class="is-visible">Performance</b>
+                    <b class="is-hidden">Success</b>
+                </span>
+                TO GROWUP
+            </h3>
+            <p class="text-center">Tax Smart is a part of Osama Qamar & Associates, a tax firm who is providing tax
+                solutions to
+                individuals/corporates for last 5 years. The firm was founded by an Income Tax Practitioner Osama Qamar,
+                who is also a senior member of Karachi Tax Bar Association. The firm is associated with Senior Advocates
+                and CFA qualified persons.
+            </p>
+            <h4><span>Please find below services that are being offered by us:</span></h4>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-kg-1">
+                <div class="about-area__content about-area__content--left">
+                    <a href="javascript:void(0);" class="cr-readmore">
+                        <span>Tax Smart Pk</span>
+                    </a>
+                    <ol class="alignleft">
+                        <li>Filing of tax returns of sole proprietor’s.</li>
+                        <li>Filing of tax returns of individuals working in corporate sector.</li>
+                        <li>NTN/Form 181 Registration for individuals.</li>
+                        <li>Response to notice received by individuals.</li>
+                    </ol>
+
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-lg-right">
+                <div class="about-area__content about-area__content--left">
+                    <a href="javascript:void(0);" class="cr-readmore">
+                        <span>OSAMA QAMAR & ASSOCIATES</span>
+                    </a>
+                    <ol class="alignleft">
+                        <li>Filing of monthly statements of Income Tax and SRB of corporates.</li>
+                        <li>Filing of quarterly form 165 along with annual form 149 of corporate clients.</li>
+                        <li>Ensure compliance against issued FBR notices for amendments, audit, explanation and
+                            miscellaneous by/within the due date/deadline.</li>
+                        <li>Calculation of withholding taxes, and likewise issuance of tax deduction certificates to
+                            employees, land lord and vendor’s</li>
+                        <li>Registration/formation services for AOP and PVT Ltd Company</li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Team Area -->
-<div id="team-area-3" class="advisor-area section-padding-bottom--xlg bg--white">
+<section id="team-area" class="advisor-area bg--white section-padding--md">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
@@ -33,93 +91,41 @@
                 </div>
             </div>
         </div>
-        <div class="team-wrap">
+        <div class="row advisors">
 
-            <!-- Single Team -->
-            <div class="single-team active">
-                <div class="image">
-                    <img src="{{ asset('assets/images/advisors/advisor-3/advisor-1.webp') }}" alt="Advisor Thumb">
-                </div>
-                <div class="content">
-                    <h6><a href="{{ route('Frontend.AdvisorDetail') }}">David miller</a></h6>
-                    <h6><small>Tax Advisor</small></h6>
-                    <p>perspiciatis unde omnisste natus error sit voluptatem accusantium dolore</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li class="facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li class="twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li class="instagram"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                            <li class="google-plus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
+            <!-- Single Advisor -->
+            <div class="col-lg-6 col-sm-6">
+                <figure class="advisor">
+                    <div class="advisor__image">
+                        <img src="{{ asset('assets/images/advisors/advisor-1.webp') }}" alt="team member">
                     </div>
-                </div>
+                    <figcaption class="advisor__content">
+                        <h6><a href="javascript:void(0);">Osama Omar</a></h6>
+                        <p>CEO & Founder</p>
+                        <p>Description</p>
+                    </figcaption>
+                </figure>
             </div>
-            <!--// Single Team -->
+            <!--// Single Advisor -->
 
-            <!-- Single Team -->
-            <div class="single-team">
-                <div class="image">
-                    <img src="{{ asset('assets/images/advisors/advisor-3/advisor-2.webp') }}" alt="Advisor Thumb">
-                </div>
-                <div class="content">
-                    <h6><a href="{{ route('Frontend.AdvisorDetail') }}">JULIA ANDERSON</a></h6>
-                    <h6><small>Tax Advisor</small></h6>
-                    <p>perspiciatis unde omnisste natus error sit voluptatem accusantium dolore</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li class="facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li class="twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li class="instagram"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                            <li class="google-plus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
+            <!-- Single Advisor -->
+            <div class="col-lg-6 col-sm-6">
+                <figure class="advisor">
+                    <div class="advisor__image">
+                        <img src="{{ asset('assets/images/advisors/advisor-2.webp') }}" alt="team member">
                     </div>
-                </div>
+                    <figcaption class="advisor__content">
+                        <h6><a href="javascript:void(0);">JUlia ANDERSON</a></h6>
+                        <p>Advocate</p>
+                        <p>Description</p>
+                    </figcaption>
+                </figure>
             </div>
-            <!--// Single Team -->
-
-            <!-- Single Team -->
-            <div class="single-team">
-                <div class="image"><img src="{{ asset('assets/images/advisors/advisor-3/advisor-3.webp') }}" alt="Advisor Thumb">
-                </div>
-                <div class="content">
-                    <h6><a href="{{ route('Frontend.AdvisorDetail') }}">MARTIN SMITH</a></h6>
-                    <h6><small>Tax Advisor</small></h6>
-                    <p>perspiciatis unde omnisste natus error sit voluptatem accusantium dolore</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li class="facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li class="twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li class="instagram"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                            <li class="google-plus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--// Single Team -->
-
-            <!-- Single Team -->
-            <div class="single-team">
-                <div class="image"><img src="{{ asset('assets/images/advisors/advisor-3/advisor-4.webp') }}" alt="Advisor Thumb">
-                </div>
-                <div class="content">
-                    <h6><a href="{{ route('Frontend.AdvisorDetail') }}">SIMON COOK</a></h6>
-                    <h6><small>Tax Advisor</small></h6>
-                    <p>perspiciatis unde omnisste natus error sit voluptatem accusantium dolore</p>
-                    <div class="social-icons">
-                        <ul>
-                            <li class="facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li class="twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li class="instagram"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                            <li class="google-plus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--// Single Team -->
+            <!--// Single Advisor -->
 
         </div>
     </div>
-</div>
+</section>
 <!--// Team Area -->
 
 <!-- Call To Action Area -->

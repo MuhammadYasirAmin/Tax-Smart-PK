@@ -15,10 +15,10 @@ class CreateAppFormImagesTable extends Migration
     {
         Schema::create('app_form_images', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('form_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->string('UserImages')->nullable();
             $table->timestamps();
-            $table->foreign('form_id')->references('id')->on('app_forms')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

@@ -97,7 +97,8 @@
                                 <li>
                                     <a href="{{ route('Frontend.index') }}">HOME</a>
                                 </li>
-                                <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
+                                <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT US</a></li>
+                                <li><a href="{{ route('Frontend.OurAdvisors') }}">TEAM</a></li>
                                 <li><a href="{{ route('Frontend.OurServices') }}">SERVICES</a></li>
                                 <!--<li>-->
                                 <!--    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>-->
@@ -105,6 +106,7 @@
                                 <!--        <li><a href="{{ route('Frontend.TaxServices') }}">Tax Services</a></li>-->
                                 <!--    </ul>-->
                                 <!--</li>-->
+                                <li><a href="{{ route('Frontend.Process') }}">PROCESS</a></li>
                                 <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
                             </ul>
                         </nav>
@@ -153,7 +155,8 @@
                         <li>
                             <a href="{{ route('Frontend.index') }}">HOME</a>
                         </li>
-                        <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT</a></li>
+                        <li><a href="{{ route('Frontend.AboutUs') }}">ABOUT US</a></li>
+                        <li><a href="{{ route('Frontend.OurAdvisors') }}">TEAM</a></li>
                         <li><a href="{{ route('Frontend.OurServices') }}">SERVICES</a></li>
                         <!--<li>-->
                         <!--    <a href="{{ route('Frontend.OurServices') }}">SERVICE</a>-->
@@ -161,6 +164,7 @@
                         <!--        <li><a href="{{ route('Frontend.TaxServices') }}">Services</a></li>-->
                         <!--    </ul>-->
                         <!--</li>-->
+                        <li><a href="{{ route('Frontend.Process') }}">PROCESS</a></li>
                         <li><a href="{{ route('Frontend.ContactUs') }}">CONTACT</a></li>
                     </ul>
                 </nav>
