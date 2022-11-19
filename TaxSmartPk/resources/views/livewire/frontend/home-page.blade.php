@@ -317,87 +317,86 @@
             <div class="col-xl-7">
                 <div class="taxcalc__calculation">
                     <div class="taxcalc__calculation__inner">
-                        <div class="row no-gutters">
+                        <form autocomplete="off" id="calculateTax" name="calculateTax" onsubmit="return!1">
+                            <div class="row no-gutters">
 
-                            <div class="col-lg-6 col-md-6 wow fadeInUp">
-                                <div class="single-input">
-                                    <label for="taxcalc-business-area">Choose Your Business Area*</label>
-                                    <select name="taxcalc-business-area" id="taxcalc-business-area">
-                                        <option value="1">Select your business</option>
-                                        <option value="2">Marketing</option>
-                                        <option value="3">IT Industries</option>
-                                        <option value="4">Management Industries</option>
-                                        <option value="5">Property Business</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.15">
-                                <div class="single-input">
-                                    <label for="taxcalc-country-residence">Country of residence*</label>
-                                    <select name="taxcalc-country-residence" id="taxcalc-country-residence">
-                                        <option value="1">Pakistan</option>
-                                        <!--<option value="2">United States</option>-->
-                                        <!--<option value="3">United Kingdom</option>-->
-                                        <!--<option value="3">Germany</option>-->
-                                        <!--<option value="3">Netherland</option>-->
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3">
-                                <div class="single-input">
-                                    <label for="taxcalc-employee-counter">Number of Employees</label>
-                                    <select name="taxcalc-employee-counter" id="taxcalc-employee-counter">
-                                        <option value="1">Select Here</option>
-                                        <option value="2">0 - 20</option>
-                                        <option value="3">21 - 50</option>
-                                        <option value="4">51 - 150</option>
-                                        <option value="5">151 - 500</option>
-                                        <option value="6">500+</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.45">
-                                <div class="single-input">
-                                    <label for="taxcalc-tax-year">Tax Year*</label>
-                                    <select name="taxcalc-tax-year" id="taxcalc-tax-year">
-                                        <option value="1">2000 - 2005</option>
-                                        <option value="2">2006 - 2010</option>
-                                        <option value="3">2011 - 2015</option>
-                                        <option value="4">2016 - 2022</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.6">
-                                <div class="single-input">
-                                    <label for="taxcalc-yearly-income">Yearly Total Income</label>
-                                    <select name="taxcalc-yearly-income" id="taxcalc-yearly-income">
-                                        <option value="1">Select Range</option>
-                                        <option value="2">0 - 1 Million</option>
-                                        <option value="3">1 Million - 3 Million</option>
-                                        <option value="4">3 Million - 10 Million</option>
-                                        <option value="5">10 Million - 20 Million</option>
-                                        <option value="6">20 Million+</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-8 col-md-8 wow fadeInUp" data-wow-delay="0.75">
-                                <div class="button-holder">
-                                    <button class="cr-btn" type="submit">
-                                        <span>Calculate</span>
-                                    </button>
-                                    <span class="equal-sign">=</span>
+                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.45">
                                     <div class="single-input">
-                                        <label for="taxcalc-total-calculation">Total Payable Tax</label>
-                                        <input type="text" id="taxcalc-total-calculation" placeholder="$000.00">
+                                        <label for="select-tax-year">Tax Year*</label>
+                                        <select name="year" id="select-tax-year">
+                                            {{-- @foreach (range(date('Y'), date('Y') - 15) as $y)
+                                                <option value="{{ $y }}">{{ $y }}</option>
+                                            @endforeach --}}
+                                            <option value="2022">2022</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
 
+                                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.6">
+                                    <div class="single-input">
+                                        <label for="salary">Total Income</label>
+                                        <input id="salaryssss" name="salary"
+                                            onkeyup="this.value=transform(this.value)"
+                                            placeholder="Enter your monthly salary" type="tel">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-8 wow fadeInUp" data-wow-delay="0.75">
+                                    <label></label>
+                                    <div class="button-holder" style="margin-left: 0; margin-top: 40px;">
+                                        <span class="equal-sign">=</span>
+                                        <button class="cr-btn" onclick="taxCalculate(event)" type="button"
+                                            style="padding: 10px 20px;">
+                                            <span>Calculate</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                        <div class="ntn-status--table">
+                            <table class="mt-5 table">
+                                <tbody>
+                                    <tr>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-left-0"><span>Monthly
+                                                Salary</span></td>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-left border-right">
+                                            <span>Monthly Tax</span>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-right-0"><span>Salary After
+                                                Tax</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-top-0 pt-0 border-left-0">
+                                            <h2 class="sub-heading" id="monthlySalary">0.00</h2>
+                                        </td>
+                                        <td class="border-top-0 pt-0 border-left border-right">
+                                            <h2 class="sub-heading" id="monthlyTax">0.00</h2>
+                                        </td>
+                                        <td class="border-top-0 pt-0 border-right-0">
+                                            <h2 class="sub-heading" id="monthlySalaryAfterTax">0.00</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom-0 pb-0 border-left-0"><span>Yearly Salary</span></td>
+                                        <td class="border-bottom-0 pb-0 border-left border-right"><span>Yearly
+                                                Tax</span></td>
+                                        <td class="border-bottom-0 pb-0 border-right-0"><span>Salary After Tax</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-left-0">
+                                            <h2 class="sub-heading" id="yearlySalary">0.00</h2>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-left border-right">
+                                            <h2 class="sub-heading" id="yearlyTax">0.00</h2>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-right-0">
+                                            <h2 class="sub-heading" id="yearlySalaryAfterTax">0.00</h2>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -476,18 +475,6 @@
                     <!-- Testimonial Content -->
                     <div class="testimonial__content testimonial-content-slider-active">
 
-
-
-
-                        <!-- Testimonial Content Single -->
-                        <div class="testimonial__content__single">
-                            <p>Tax smart is the most competent website that I have come across. They are extremely
-                                efficient at what they do.
-                                They helped me get my financial poisition back on track within a small period of time.
-                            </p>
-                        </div>
-                        <!--// Testimonial Content Single -->
-
                         <!-- Testimonial Content Single -->
                         <div class="testimonial__content__single">
                             <p>I contacted Taxsmartpk and they responded very quickly.
@@ -501,15 +488,6 @@
                             <p>After working with Tax smart, my tax filing system is very organised and I am able to
                                 find any relevant information easily.
                                 They made tax filing much much easier and I am extremely grateful for that. </p>
-                        </div>
-                        <!--// Testimonial Content Single -->
-
-                        <!-- Testimonial Content Single -->
-                        <div class="testimonial__content__single">
-                            <p>Tax smart is the most competent website that I have come across. They are extremely
-                                efficient at what they do.
-                                They helped me get my financial poisition back on track within a small period of time.
-                            </p>
                         </div>
                         <!--// Testimonial Content Single -->
 
@@ -538,24 +516,11 @@
                         <!-- Single Author -->
                         <div class="testimonial__author__single">
                             <div class="testimonial__author__image">
-                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
-                                    alt="testimonial author">
-                            </div>
-                            <div class="testimonial__author__description">
-                                <h6>DAVID MILLER</h6>
-                                <span>Client</span>
-                            </div>
-                        </div>
-                        <!--// Single Author -->
-
-                        <!-- Single Author -->
-                        <div class="testimonial__author__single">
-                            <div class="testimonial__author__image">
                                 <img src="{{ asset('assets/images/testimonial/testimonial-author-2.webp') }}"
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>RAISA MARIYA</h6>
+                                <h6>Umer Khan</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -568,20 +533,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>SHON SMITH</h6>
-                                <span>Client</span>
-                            </div>
-                        </div>
-                        <!--// Single Author -->
-
-                        <!-- Single Author -->
-                        <div class="testimonial__author__single">
-                            <div class="testimonial__author__image">
-                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
-                                    alt="testimonial author">
-                            </div>
-                            <div class="testimonial__author__description">
-                                <h6>DAVID MILLER</h6>
+                                <h6>Sarosh</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -594,7 +546,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>RAISA MARIYA</h6>
+                                <h6>Umer Khan</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -607,7 +559,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>SHON SMITH</h6>
+                                <h6>Sarosh</h6>
                                 <span>Client</span>
                             </div>
                         </div>

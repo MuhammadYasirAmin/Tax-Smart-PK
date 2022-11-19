@@ -169,6 +169,114 @@
 </section>
 <!--// Page Service Area -->
 
+<!-- Page Service Area -->
+<section id="pg-services-area" class="cr-section pg-services-area ">
+
+    <!-- Pg Service Area Top -->
+    <div class="pg-services-area__description">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pg-services__details">
+                        <h4>OUR SERVICES</h4>
+                        <p>Filing your annual tax return can be stressful. But with Tax Smart, you can feel free and
+                            relaxed. We provide all kind of tax related services that includes registration of form
+                            181/NTN, Sales Tax Registration and filing of annual tax returns for individuals as well as
+                            corporates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Pg Service Area Top -->
+
+    <!-- Services Styles Bottom -->
+    <div class="pg-services-area__srevicelist servicelist--style2">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">NTN REGISTRATION</a>
+                            </h5>
+                            <p>[Requirements]</p>
+                            <ol class="alignleft">
+                                <li>CNIC number</li>
+                                <li>Address</li>
+                                <li>Latest Paid Electricity Bill</li>
+                                <li>Cell Number</li>
+                                <li>Email address</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}"
+                                alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">SALES TAX REGISTRATION</a>
+                            </h5>
+                            <p>[Requirements]</p>
+                            <ol class="alignleft">
+                                <li>CNIC number</li>
+                                <li>Address</li>
+                                <li>Latest Paid Electricity Bill</li>
+                                <li>Letter Head</li>
+                                <li>Nature of Business</li>
+                                <li>Cell Number</li>
+                                <li>Email address</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">FILLING OF ANNUAL TAX RETURNS</a>
+                            </h5>
+                            {{-- <p>[Requirements]</p> --}}
+                            <p>Tax Smart Form which requires below details:</p>
+                            <ol class="alignleft">
+                                <li>Employer Tax Deduction Certificate</li>
+                                <li>All bank balances as on 30th June {{ date('Y') }}</li>
+                                <li>All Asset details as on 30th June {{ date('Y') }}[House, Apt, Plot, Car, Bike
+                                    etc]</li>
+                                <li>Any Asset bought or sold in fiscal year
+                                    {{ date('Y') }}[1/7/{{ date('y') - 1 }} to 30/6/{{ date('y') }}]</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+            </div>
+        </div>
+    </div>
+    <!--// Services Styles Bottom -->
+
+</section>
+<!--// Page Service Area -->
+
 <!-- Testimonial Area -->
 <div id="testimonial-area" class="testimonial-area section-padding--xlg bg--white">
     <div class="container">
@@ -204,7 +312,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>SHON SMITH</h6>
+                                <h6>Sarosh</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -231,34 +339,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>RAISA MARIYA</h6>
-                                <span>Client</span>
-                            </div>
-                        </div>
-                        <!--// Single Author -->
-
-                    </div>
-                    <!--// Testimonial Single -->
-
-                    <!-- Testimonial Single -->
-                    <div class="testimonial__single">
-
-                        <!-- Testimonial Content Single -->
-                        <div class="testimonial__content__single">
-                            <p>After working with Tax smart, my tax filing system is very organised and I am able to
-                                find any relevant information easily.
-                                They made tax filing much much easier and I am extremely grateful for that.</p>
-                        </div>
-                        <!--// Testimonial Content Single -->
-
-                        <!-- Single Author -->
-                        <div class="testimonial__author__single">
-                            <div class="testimonial__author__image">
-                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
-                                    alt="testimonial author">
-                            </div>
-                            <div class="testimonial__author__description">
-                                <h6>John Patrik</h6>
+                                <h6>Umer Khan</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -286,7 +367,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>SHON SMITH</h6>
+                                <h6>Sarosh</h6>
                                 <span>Client</span>
                             </div>
                         </div>
@@ -313,34 +394,7 @@
                                     alt="testimonial author">
                             </div>
                             <div class="testimonial__author__description">
-                                <h6>RAISA MARIYA</h6>
-                                <span>Client</span>
-                            </div>
-                        </div>
-                        <!--// Single Author -->
-
-                    </div>
-                    <!--// Testimonial Single -->
-
-                    <!-- Testimonial Single -->
-                    <div class="testimonial__single">
-
-                        <!-- Testimonial Content Single -->
-                        <div class="testimonial__content__single">
-                            <p>After working with Tax smart, my tax filing system is very organised and I am able to
-                                find any relevant information easily.
-                                They made tax filing much much easier and I am extremely grateful for that.</p>
-                        </div>
-                        <!--// Testimonial Content Single -->
-
-                        <!-- Single Author -->
-                        <div class="testimonial__author__single">
-                            <div class="testimonial__author__image">
-                                <img src="{{ asset('assets/images/testimonial/testimonial-author-1.webp') }}"
-                                    alt="testimonial author">
-                            </div>
-                            <div class="testimonial__author__description">
-                                <h6>John Patrik</h6>
+                                <h6>Umer Khan</h6>
                                 <span>Client</span>
                             </div>
                         </div>

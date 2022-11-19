@@ -63,7 +63,8 @@
                     <div class="header__top__inner">
                         <ul class="header__top__info">
                             <li>
-                                <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> (+92) 317 5902778</a>
+                                <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> (+92) 317
+                                    5902778</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i>
@@ -145,7 +146,8 @@
                         <a href="javascript:void(0);"><i class="flaticon-old-typical-phone"></i> +92 317 5902778</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i> info@taxsmartpk.com</a>
+                        <a href="javascript:void(0);"><i class="flaticon-black-back-closed-envelope-shape"></i>
+                            info@taxsmartpk.com</a>
                     </li>
                 </ul>
 
@@ -193,7 +195,8 @@
                 <div class="container">
                     <div class="footer-area__logo text-center">
                         <a href="{{ route('Frontend.index') }}">
-                            <img src="{{ asset('assets/images/logo/logo-theme.webp') }}" style="max-width: 205px;" alt="footer logo">
+                            <img src="{{ asset('assets/images/logo/logo-theme.webp') }}" style="max-width: 205px;"
+                                alt="footer logo">
                         </a>
                     </div>
 
@@ -202,7 +205,8 @@
                         <!-- Single Widget -->
                         <section class="widget widget-about">
                             <h5 class="widget-title">ABOUT TaxSmartPK</h5>
-                            <p>Offering smart and innovative services with top quality standards, through our great organizational structure</p>
+                            <p>Offering smart and innovative services with top quality standards, through our great
+                                organizational structure</p>
                             <div class="social-icons social-icons--rounded">
                                 <ul>
                                     <li class="facebook">
@@ -246,17 +250,20 @@
                             <ul>
                                 <li>
                                     <p>
-                                        <a href="https://www.facebook.com/profile.php?id=100063563576480" target="_blank">@Facbook</a>
+                                        <a href="https://www.facebook.com/profile.php?id=100063563576480"
+                                            target="_blank">@Facbook</a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="https://instagram.com/taxsmartpk?igshid=YmMyMTA2M2Y=" target="_blank">@Instagram</a>
+                                        <a href="https://instagram.com/taxsmartpk?igshid=YmMyMTA2M2Y="
+                                            target="_blank">@Instagram</a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="https://youtube.com/channel/UC_XHxl8SIQ0mU_5Paz6mGZQ" target="_blank">@Youtube</a>
+                                        <a href="https://youtube.com/channel/UC_XHxl8SIQ0mU_5Paz6mGZQ"
+                                            target="_blank">@Youtube</a>
                                     </p>
                                 </li>
                             </ul>
@@ -334,6 +341,135 @@
 
     <!-- Main JS -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
+
+    <script>
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function transform(e) {
+            return (parseInt(e.replace(/[^\d]+/gi, ''), 10) || 0).toLocaleString('en-US');
+        }
+
+        async function taxCalculate() {
+            const revert = +(String(document.forms['calculateTax']['salaryssss'].value).replace(/,/g, ''))
+            const data = {
+                year: document.forms['calculateTax']['year'].value,
+                salary: revert || '0'
+            };
+
+            // const url = `https://secure.befiler.com/befiler_services_prod/salary/tax/calculator?year=${data.year}&salary=${data.salary}&yearly=false`;
+
+            // fetch(`http://127.0.0.1:8000/?year=${data.year}&salary=${data.salary}&yearly=false`).then((res) =>
+            //     res.json()).then(function(res) {
+            //     if (res.code === 1) {
+            //         document.getElementById('monthlySalary').innerText = (Math.round(res.response
+            //             .monthlySalary * 100) / 100).toFixed(2);
+            //         document.getElementById('monthlyTax').innerText = (Math.round(res.response.monthlyTax *
+            //             100) / 100).toFixed(2);
+            //         document.getElementById('monthlySalaryAfterTax').innerText = (Math.round(res.response
+            //             .monthlySalaryAfterTax * 100) / 100).toFixed(2);
+            //         document.getElementById('yearlySalary').innerText = (Math.round(res.response.yearlySalary *
+            //             100) / 100).toFixed(2);
+            //         document.getElementById('yearlyTax').innerText = (Math.round(res.response.yearlyTax * 100) /
+            //             100).toFixed(2);
+            //         document.getElementById('yearlySalaryAfterTax').innerText = (Math.round(res.response
+            //             .yearlySalaryAfterTax * 100) / 100).toFixed(2);
+            //     }
+            // }).catch(e => console.error(e));
+            var salaryssss = document.getElementById("salaryssss");
+
+
+            var updatedsalaryssss =
+                (salaryssss.charCode >= 48 && salaryssss.charCode <= 57) ||
+                salaryssss.charCode == 0;
+            var monthlysalaryssss = data.salary;
+            if (monthlysalaryssss == "") {
+                monthlysalaryssss = 0;
+            }
+            var yearlysalaryssss = calculateTax(monthlysalaryssss * 12);
+            document.getElementById("monthlySalary").innerHTML = monthlysalaryssss;
+            document.getElementById("monthlyTax").innerHTML = round(
+                yearlysalaryssss / 12
+            );
+            document.getElementById("monthlySalaryAfterTax").innerHTML = round(
+                monthlysalaryssss - round(yearlysalaryssss / 12)
+            );
+            document.getElementById("yearlySalary").innerHTML = round(
+                monthlysalaryssss * 12
+            );
+            document.getElementById("yearlyTax").innerHTML = round(
+                yearlysalaryssss
+            );
+            document.getElementById("yearlySalaryAfterTax").innerHTML = round(
+                monthlysalaryssss * 12 - yearlysalaryssss
+            );
+
+
+            function round(amount) {
+                return +(Math.round(amount).toFixed(2));
+            }
+
+            function calculateTax(anualamount) {
+                var calculatedTax = 0;
+                if (anualamount > 600000 && anualamount <= 1200000) {
+                    anualamount -= 600000;
+                    calculatedTax = anualamount * 0.05;
+                } else {
+                    if (anualamount > 1200000 && anualamount <= 1800000) {
+                        anualamount -= 1200000;
+                        calculatedTax = 30000 + anualamount * 0.1;
+                    } else {
+                        if (anualamount > 1800000 && anualamount <= 2500000) {
+                            anualamount -= 1800000;
+                            calculatedTax = 90000 + anualamount * 0.15;
+                        } else {
+                            if (anualamount > 2500000 && anualamount <= 3500000) {
+                                anualamount -= 2500000;
+                                calculatedTax = 195000 + anualamount * 0.175;
+                            } else {
+                                if (anualamount > 3500000 && anualamount <= 5000000) {
+                                    anualamount -= 3500000;
+                                    calculatedTax = 370000 + anualamount * 0.2;
+                                } else {
+                                    if (anualamount > 5000000 && anualamount <= 8000000) {
+                                        anualamount -= 5000000;
+                                        calculatedTax = 670000 + anualamount * 0.225;
+                                    } else {
+                                        if (anualamount > 8000000 && anualamount <= 12000000) {
+                                            anualamount -= 8000000;
+                                            calculatedTax = 1345000 + anualamount * 0.25;
+                                        } else {
+                                            if (anualamount > 12000000 && anualamount <= 30000000) {
+                                                anualamount -= 12000000;
+                                                calculatedTax = 2345000 + anualamount * 0.275;
+                                            } else {
+                                                if (anualamount > 30000000 && anualamount <= 50000000) {
+                                                    anualamount -= 30000000;
+                                                    calculatedTax = 7295000 + anualamount * 0.3;
+                                                } else {
+                                                    if (anualamount > 50000000 && anualamount <= 75000000) {
+                                                        anualamount -= 50000000;
+                                                        calculatedTax = 13295000 + anualamount * 0.325;
+                                                    } else {
+                                                        if (anualamount > 75000000) {
+                                                            anualamount -= 75000000;
+                                                            calculatedTax = 21420000 + anualamount * 0.35;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                return round(calculatedTax);
+            }
+        }
+    </script>
 
 </body>
 

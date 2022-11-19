@@ -86,8 +86,6 @@
                 <div class="section-title text-center">
                     <h4>OUR TEAM</h4>
                     <h2>MEET OUR <span class="color--theme">TAX ADVISOR</span></h2>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae</p>
                 </div>
             </div>
         </div>
@@ -135,11 +133,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="calltoaction text-center">
-                    <h3>NEED ANY HELP AT<span class="color--theme"> YOUR TAX SOLUTION?</span></h3>
-                    <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                        consectetur, adipisci </p>
-                    <h6>JUST DAIL <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)</h6>
+                    <h3>GIVING YOU MORE
+                        <span class="color--theme"> FOR YOUR MONEY</span>
+                    </h3>
+                    <p>Your one stop solution to all your tax related problems.
+                        Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
+                        life easier and also to help you reach the top. </p>
+                    <!--<h6>JUST DAIL-->
+                    <!--    <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)-->
+                    <!--</h6>-->
                 </div>
             </div>
         </div>
