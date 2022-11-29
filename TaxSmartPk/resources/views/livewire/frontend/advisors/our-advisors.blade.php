@@ -10,8 +10,9 @@
                             <li>Advisor</li>
                         </ul>
                         <h1>Our Advisors</h1>
-                        <p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                            rem </p>
+                        <p>Your one stop solution to all your tax related problems.
+                        Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
+                        life easier and also to help you reach the top.</p>
                     </div>
                 </div>
             </div>
@@ -89,39 +90,39 @@
                 </div>
             </div>
         </div>
-        <div class="row advisors">
+        <div class="row advisors advisors--style2">
 
             <!-- Single Advisor -->
-            <div class="col-lg-6 col-sm-6">
-                <figure class="advisor">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="advisor advisor--style2">
                     <div class="advisor__image">
                         <img src="{{ asset('assets/images/advisors/advisor-1.webp') }}" alt="team member">
+
                     </div>
-                    <figcaption class="advisor__content">
-                        <h6><a href="javascript:void(0);">Osama Omar</a></h6>
+                    <div class="advisor__content">
+                        <h5>Osama Omar</h5>
                         <p>CEO & Founder</p>
-                        <p>Description</p>
-                    </figcaption>
-                </figure>
+                    </div>
+                </div>
             </div>
             <!--// Single Advisor -->
 
             <!-- Single Advisor -->
-            <div class="col-lg-6 col-sm-6">
-                <figure class="advisor">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="advisor advisor--style2">
                     <div class="advisor__image">
                         <img src="{{ asset('assets/images/advisors/advisor-2.webp') }}" alt="team member">
                     </div>
-                    <figcaption class="advisor__content">
-                        <h6><a href="javascript:void(0);">JUlia ANDERSON</a></h6>
+                    <div class="advisor__content">
+                        <h5>Osama Omar</h5>
                         <p>Advocate</p>
-                        <p>Description</p>
-                    </figcaption>
-                </figure>
+                    </div>
+                </div>
             </div>
             <!--// Single Advisor -->
 
         </div>
+
     </div>
 </section>
 <!--// Team Area -->

@@ -35,6 +35,7 @@
                     <p>The employees who wants to file his/her tax return is supposed to simply fill a single pager form
                         along with below supporting documents. The form requires info regarding his/her income and
                         assets.</p>
+                    <b>[Requirements]</b>
                     <ol class="alignleft">
                         <li>Employer Tax Deduction Certificate.</li>
                         <li>All bank balances as on 30th June 2022.</li>
@@ -132,7 +133,8 @@
                                     <h5>
                                         <a href="{{ route('Frontend.TaxServices') }}">STEP 05</a>
                                     </h5>
-                                    <p>After receiving the final draft signed by the employee the tax return will be filed within 2-3 working days.</p>
+                                    <p>After receiving the final draft signed by the employee the tax return will be
+                                        filed within 2-3 working days.</p>
                                 </div>
                             </div>
                         </div>
@@ -159,10 +161,16 @@
                     <p>Your one stop solution to all your tax related problems.
                         Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
                         life easier and also to help you reach the top. </p>
-                    <!--<h6>JUST DAIL-->
-                    <!--    <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)-->
-                    <!--</h6>-->
+                    <h6>Download the Form & Send through by Email
+                        <a href="{{ route('Frontend.Download') }}">Download Now</a>
+                    </h6>
+                    <h6>Fill the Form & Submit Online
+                        <a href="{{ route('Frontend.Appointment') }}">Apply Now</a>
+                    </h6>
                 </div>
+            </div>
+            <div class="col-lg-10">
+
             </div>
         </div>
     </div>

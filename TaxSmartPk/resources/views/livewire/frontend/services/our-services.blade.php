@@ -29,6 +29,228 @@
     <div class="pg-services-area__description">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="pg-services__details">
+                        <h4>OUR SERVICES</h4>
+                        <p>Filing your annual tax return can be stressful. But with Tax Smart, you can feel free and
+                            relaxed. We provide all kind of tax related services that includes registration of form
+                            181/NTN, Sales Tax Registration and filing of annual tax returns for individuals as well as
+                            corporates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Pg Service Area Top -->
+
+    <!-- Services Styles Bottom -->
+    <div class="pg-services-area__srevicelist servicelist--style2">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">NTN REGISTRATION</a>
+                            </h5>
+                            <b>[Requirements]</b>
+                            <ol class="alignleft">
+                                <li>CNIC number</li>
+                                <li>Address</li>
+                                <li>Latest Paid Electricity Bill</li>
+                                <li>Cell Number</li>
+                                <li>Email address</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}"
+                                alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">SALES TAX REGISTRATION</a>
+                            </h5>
+                            <b>[Requirements]</b>
+                            <ol class="alignleft">
+                                <li>CNIC number</li>
+                                <li>Address</li>
+                                <li>Latest Paid Electricity Bill</li>
+                                <li>Letter Head</li>
+                                <li>Nature of Business</li>
+                                <li>Cell Number</li>
+                                <li>Email address</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6 wow flipInX">
+                    <div class="service">
+                        <div class="service__icon">
+                            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
+                        </div>
+                        <div class="service__content">
+                            <h5>
+                                <a href="{{ route('Frontend.TaxServices') }}">FILLING OF ANNUAL TAX RETURNS</a>
+                            </h5>
+                            {{-- <p>[Requirements]</p> --}}
+                            <p>Tax Smart Form which requires below details:</p>
+                            <ol class="alignleft">
+                                <li>Employer Tax Deduction Certificate</li>
+                                <li>All bank balances as on 30th June {{ date('Y') }}</li>
+                                <li>All Asset details as on 30th June {{ date('Y') }}[House, Apt, Plot, Car, Bike
+                                    etc]</li>
+                                <li>Any Asset bought or sold in fiscal year
+                                    {{ date('Y') }}[1/7/{{ date('y') - 1 }} to 30/6/{{ date('y') }}]</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Service -->
+
+            </div>
+        </div>
+    </div>
+    <!--// Services Styles Bottom -->
+
+</section>
+<!--// Page Service Area -->
+
+<!-- Tax Calculation Area -->
+<section id="tax-calculation" class="tax-calculation-area bg--grey--light">
+    <div class="taxcalc">
+        <div class="row no-gutters align-items-center">
+
+            <!-- Tax Calculation Area Left -->
+            <div class="col-xl-5">
+                <div class="taxcalc__content" data-black-overlay="4">
+                    <div class="taxcalc__content__inner">
+                        <h3>TAX
+                            <span class="color--theme">CALCULATION</span>
+                        </h3>
+                        <p>Helping to evaluate the performance of your personal or business's financial position and
+                            providing continous guidance in retaining your wealth. </p>
+                    </div>
+                </div>
+            </div>
+            <!--// Tax Calculation Area Left -->
+
+            <!-- Tax Calculation Area Right -->
+            <div class="col-xl-7">
+                <div class="taxcalc__calculation">
+                    <div class="taxcalc__calculation__inner">
+                        <form autocomplete="off" id="calculateTax" name="calculateTax" onsubmit="return!1">
+                            <div class="row no-gutters">
+
+                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.45">
+                                    <div class="single-input">
+                                        <label for="select-tax-year">Tax Year*</label>
+                                        <select name="year" id="select-tax-year">
+                                            {{-- @foreach (range(date('Y'), date('Y') - 15) as $y)
+                                                <option value="{{ $y }}">{{ $y }}</option>
+                                            @endforeach --}}
+                                            <option value="2022">2022</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.6">
+                                    <div class="single-input">
+                                        <label for="salary">Total Income</label>
+                                        <input id="salaryssss" name="salary"
+                                            onkeyup="this.value=transform(this.value)"
+                                            placeholder="Enter your monthly salary" type="tel">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-8 wow fadeInUp" data-wow-delay="0.75">
+                                    <label></label>
+                                    <div class="button-holder" style="margin-left: 0; margin-top: 40px;">
+                                        <span class="equal-sign">=</span>
+                                        <button class="cr-btn" onclick="taxCalculate(event)" type="button"
+                                            style="padding: 10px 20px;">
+                                            <span>Calculate</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                        <div class="ntn-status--table">
+                            <table class="mt-5 table">
+                                <tbody>
+                                    <tr>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-left-0"><span>Monthly
+                                                Salary</span></td>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-left border-right">
+                                            <span>Monthly Tax</span>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pb-0 border-right-0"><span>Salary After
+                                                Tax</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-top-0 pt-0 border-left-0">
+                                            <h2 class="sub-heading" id="monthlySalary">0.00</h2>
+                                        </td>
+                                        <td class="border-top-0 pt-0 border-left border-right">
+                                            <h2 class="sub-heading" id="monthlyTax">0.00</h2>
+                                        </td>
+                                        <td class="border-top-0 pt-0 border-right-0">
+                                            <h2 class="sub-heading" id="monthlySalaryAfterTax">0.00</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom-0 pb-0 border-left-0"><span>Yearly Salary</span></td>
+                                        <td class="border-bottom-0 pb-0 border-left border-right"><span>Yearly
+                                                Tax</span></td>
+                                        <td class="border-bottom-0 pb-0 border-right-0"><span>Salary After Tax</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-left-0">
+                                            <h2 class="sub-heading" id="yearlySalary">0.00</h2>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-left border-right">
+                                            <h2 class="sub-heading" id="yearlyTax">0.00</h2>
+                                        </td>
+                                        <td class="border-bottom-0 border-top-0 pt-0 border-right-0">
+                                            <h2 class="sub-heading" id="yearlySalaryAfterTax">0.00</h2>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Tax Calculation Area Right -->
+
+        </div>
+    </div>
+</section>
+<!--// Tax Calculation Area -->
+
+<!-- Page Service Area -->
+<section id="pg-services-area" class="cr-section pg-services-area section-padding--xlg">
+
+    <!-- Pg Service Area Top -->
+    <div class="pg-services-area__description">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-7 order-2 order-lg-1">
                     <div class="pg-services__details">
                         <h4>CAN’T SOLVE YOUR TAX PROBLEM?</h4>
@@ -159,114 +381,6 @@
                 <!--        </div>-->
                 <!--    </div>-->
                 <!--</div>-->
-                <!--// Single Service -->
-
-            </div>
-        </div>
-    </div>
-    <!--// Services Styles Bottom -->
-
-</section>
-<!--// Page Service Area -->
-
-<!-- Page Service Area -->
-<section id="pg-services-area" class="cr-section pg-services-area ">
-
-    <!-- Pg Service Area Top -->
-    <div class="pg-services-area__description">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pg-services__details">
-                        <h4>OUR SERVICES</h4>
-                        <p>Filing your annual tax return can be stressful. But with Tax Smart, you can feel free and
-                            relaxed. We provide all kind of tax related services that includes registration of form
-                            181/NTN, Sales Tax Registration and filing of annual tax returns for individuals as well as
-                            corporates.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// Pg Service Area Top -->
-
-    <!-- Services Styles Bottom -->
-    <div class="pg-services-area__srevicelist servicelist--style2">
-        <div class="container">
-            <div class="row">
-
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-home.webp') }}" alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">NTN REGISTRATION</a>
-                            </h5>
-                            <p>[Requirements]</p>
-                            <ol class="alignleft">
-                                <li>CNIC number</li>
-                                <li>Address</li>
-                                <li>Latest Paid Electricity Bill</li>
-                                <li>Cell Number</li>
-                                <li>Email address</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <!--// Single Service -->
-
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-briefcase-2.webp') }}"
-                                alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">SALES TAX REGISTRATION</a>
-                            </h5>
-                            <p>[Requirements]</p>
-                            <ol class="alignleft">
-                                <li>CNIC number</li>
-                                <li>Address</li>
-                                <li>Latest Paid Electricity Bill</li>
-                                <li>Letter Head</li>
-                                <li>Nature of Business</li>
-                                <li>Cell Number</li>
-                                <li>Email address</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <!--// Single Service -->
-
-                <!-- Single Service -->
-                <div class="col-lg-4 col-md-6 wow flipInX">
-                    <div class="service">
-                        <div class="service__icon">
-                            <img src="{{ asset('assets/images/icons/service-icon-pie.webp') }}" alt="service icon">
-                        </div>
-                        <div class="service__content">
-                            <h5>
-                                <a href="{{ route('Frontend.TaxServices') }}">FILLING OF ANNUAL TAX RETURNS</a>
-                            </h5>
-                            {{-- <p>[Requirements]</p> --}}
-                            <p>Tax Smart Form which requires below details:</p>
-                            <ol class="alignleft">
-                                <li>Employer Tax Deduction Certificate</li>
-                                <li>All bank balances as on 30th June {{ date('Y') }}</li>
-                                <li>All Asset details as on 30th June {{ date('Y') }}[House, Apt, Plot, Car, Bike
-                                    etc]</li>
-                                <li>Any Asset bought or sold in fiscal year
-                                    {{ date('Y') }}[1/7/{{ date('y') - 1 }} to 30/6/{{ date('y') }}]</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
                 <!--// Single Service -->
 
             </div>

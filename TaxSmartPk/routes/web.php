@@ -23,6 +23,7 @@ use App\Http\Livewire\Frontend\Supports\OurProcess;
 */
 
 Route::get('/', HomePage::class, )->name('Frontend.index');
+Route::get('/Download-Form', [HomePage::class, 'DownlaodExcelForm'])->name('Frontend.Download');
 Route::get('/Our-Features', OurFeatures::class, )->name('Frontend.features');
 Route::get('/About-Us', AboutUs::class, )->name('Frontend.AboutUs');
 Route::get('/Supports/Contact-Us', ContactUs::class, )->name('Frontend.ContactUs');

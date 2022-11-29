@@ -25,13 +25,13 @@
 <!-- About Area -->
 <section id="about-area" class="cr-section about-area bg--white">
     <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-10">
-                <div class="about-area__content2 text-center">
+        <div class="row g-0">
+            <div class="col-lg-12">
+                <div class="about-area__content">
                     <h4>"Tax Smart Pk
                         <span class="color--theme"></span>”
                     </h4>
-                    <h3 class="cd-headline cx-heading slide">Providing Quality Tax Services For Over 10 Years.
+                    <h3 class="cd-headline cx-heading">Providing Quality Tax Services For Over 10 Years.
                         <span class="color--theme cd-words-wrapper cd-words-wrapper-2">
                             <b class="is-visible"></b>
                             <b></b>
@@ -53,11 +53,6 @@
                     <!--<a href="javascript:void(0)" class="cr-readmore">-->
 
                     <!--</a>-->
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="about-area__image2">
-                    <img src="{{ asset('assets/images/about/about-thumbnail-3.webp') }}" alt="about area image">
                 </div>
             </div>
         </div>
@@ -235,75 +230,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="service-area__bars text-center">
-                    <div class="cr-bars justify-content-lg-end justify-content-center">
-                        <div class="cr-bar" data-bar-percent="25" data-bar-title="2020"></div>
-                        <div class="cr-bar" data-bar-percent="45" data-bar-title="2021"></div>
-                        <div class="cr-bar" data-bar-percent="40" data-bar-title="2022"></div>
-                        <!--<div class="cr-bar" data-bar-percent="69" data-bar-title="2021"></div>-->
-                        <!--<div class="cr-bar" data-bar-percent="88" data-bar-title="2022"></div>-->
-                    </div>
-                    <span class="cr-bars__name">Our progress</span>
-                </div>
-            </div>
+            @include('livewire.frontend.partials.progress')
         </div>
     </div>
 </section>
 <!--// Service Area -->
 
 <!-- Funfact Area -->
-<div id="funfact-area" class="funfact-area bg--white">
-    <div class="funfacts">
-        <div class="row g-0">
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">750</span>
-                    </h1>
-                    <h5>Trusted Clients</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">600</span>
-                    </h1>
-                    <h5>Cases Won</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">114</span>
-                    </h1>
-                    <h5>Corporate Infrastructure</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-            <!--  Single Funfact -->
-            <div class="col-lg-3 col-sm-6">
-                <div class="funfact text-center">
-                    <h1>
-                        <span class="counter">9</span>
-                    </h1>
-                    <h5>Expert Advisor</h5>
-                </div>
-            </div>
-            <!--//  Single Funfact -->
-
-        </div>
-    </div>
-</div>
+@include('livewire.frontend.partials.counters')
 <!--// Funfact Area -->
 
 <!-- Call To Action Area -->

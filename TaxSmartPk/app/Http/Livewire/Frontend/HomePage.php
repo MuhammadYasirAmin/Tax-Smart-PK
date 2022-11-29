@@ -10,4 +10,11 @@ class HomePage extends Component
     {
         return view('livewire.frontend.home-page')->layout('layouts.main');
     }
+
+    public function DownlaodExcelForm()
+    {
+        $NTN_Form = public_path("/Form/NTN_Registration_Form.xlsx");
+        $headers = ['Content-Type: application/xlsx'];
+        return response()->download($NTN_Form, 'NTN_Registration_Form.xlsx', $headers);
+    }
 }
