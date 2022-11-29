@@ -73,7 +73,7 @@
                         </ul>
                         <div class="header__top__button">
                             <a class="cr-btn cr-btn--lg" href="{{ route('Frontend.Appointment') }}">
-                                <span>Make an appointment</span>
+                                <span>NTN Registration Form</span>
                             </a>
                         </div>
                     </div>
