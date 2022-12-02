@@ -29,6 +29,9 @@
                         <h2>MAKE AN APPOINTMENT</h2>
                     </div>
                     <div class="pg-appintment__box">
+                        @php
+                            $year = date('Y');
+                        @endphp
                         <form action="{{ route('Frontend.PostAppointment') }}" method="POST">
                             @csrf
 
@@ -57,11 +60,7 @@
                                             placeholder="Phone Number" required>
                                     </div>
                                 </div>
-                                {{-- <div class="col-lg-12">
-                                    <div class="single-input button">
-                                        <button type="submit" class="cr-btn"><span>Submit</span></button>
-                                    </div>
-                                </div> --}}
+
                             </div>
 
                             <h3 class="pt-5">Assets Details</h3>
@@ -143,7 +142,7 @@
                                 </div>
                                 <div class="col-lg-1">
                                     <div class="single-input button" style="margin-top: 45px;">
-                                        <button type="button" id="add-bank"
+                                        <button type="button" id="add-vehcile"
                                             class="btn btn-success"><span>Add</span></button>
                                     </div>
                                 </div>
@@ -181,7 +180,13 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="grandTotal" id="grand_Total"
+                                        <input readonly type="text" name="grandTotal_2021" id="grand_Total_2021"
+                                            placeholder="GRAND TOTAL" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="single-input">
+                                        <input readonly type="text" name="grandTotal_2022" id="grand_Total_2022"
                                             placeholder="GRAND TOTAL" required>
                                     </div>
                                 </div>
@@ -194,19 +199,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="SalaryIncome" id="user-phone"
+                                        <input readonly type="text" name="Income[]" id="user-phone"
                                             value="Income From Salary" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="I_TaxYear2021" id="user-phone"
+                                        <input type="number" name="I_TaxYear2021[]" id="user-phone"
                                             placeholder="Income of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="I_TaxYear2022" id="user-phone"
+                                        <input type="number" name="I_TaxYear2022[]" id="user-phone"
                                             placeholder="Income {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -216,19 +221,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="RentalIncome" id="user-phone"
+                                        <input readonly type="text" name="Income[]" id="user-phone"
                                             value="Rental Income / Any Other Income" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="R_TaxYear2021" id="user-phone"
+                                        <input type="number" name="I_TaxYear2021[]" id="user-phone"
                                             placeholder="Income of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="R_TaxYear2022" id="user-phone"
+                                        <input type="number" name="I_TaxYear2022[]" id="user-phone"
                                             placeholder="Income {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -238,7 +243,13 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="incomingFlows" id="income_Total"
+                                        <input readonly type="text" name="incomingFlows_2021" id="income_Total_2021"
+                                            placeholder="Incoming Flows TOTAL" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="single-input">
+                                        <input readonly type="text" name="incomingFlows_2022" id="income_Total_2022"
                                             placeholder="Incoming Flows TOTAL" required>
                                     </div>
                                 </div>
@@ -249,19 +260,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="PersonalExpenses" id="user-phone"
+                                        <input readonly type="text" name="OutFlows[]" id="user-phone"
                                             value="Personal Expenses" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="PE_TaxYear2021" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2021[]" id="user-phone"
                                             placeholder="Expenses of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="PE_TaxYear2022" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2022[]" id="user-phone"
                                             placeholder="Expense of {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -271,19 +282,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="TaxDeducted" id="user-phone"
+                                        <input readonly type="text" name="OutFlows[]" id="user-phone"
                                             value="Tax Deducted(Salary)" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="TD_TaxYear2021" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2021[]" id="user-phone"
                                             placeholder="Taxes of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="TD_TaxYear2022" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2022[]" id="user-phone"
                                             placeholder="Taxes of {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -293,19 +304,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="TaxPaid" id="user-phone"
+                                        <input readonly type="text" name="OutFlows[]" id="user-phone"
                                             value="Tax Paid(Other)" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="TP_TaxYear2021" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2021[]" id="user-phone"
                                             placeholder="Taxes of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="TP_TaxYear2022" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2022[]" id="user-phone"
                                             placeholder="Taxes of {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -315,19 +326,19 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-input">
-                                        <input readonly type="text" name="GiftOthers" id="user-phone"
+                                        <input readonly type="text" name="OutFlows[]" id="user-phone"
                                             value="Gift / Others" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="GO_TaxYear2021" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2021[]" id="user-phone"
                                             placeholder="Gift of {{ date('Y') - 1 }}" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input type="number" name="GO_TaxYear2022" id="user-phone"
+                                        <input type="number" name="OF_TaxYear2022[]" id="user-phone"
                                             placeholder="Gift of {{ date('Y') }}" required>
                                     </div>
                                 </div>
@@ -337,7 +348,13 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="outflowsTotal" id="outflows_Total"
+                                        <input readonly type="text" name="outflowsTotal_2021" id="outflows_Total_2021"
+                                            placeholder="OutFlows TOTAL" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="single-input">
+                                        <input readonly type="text" name="outflowsTotal_2022" id="outflows_Total_2022"
                                             placeholder="OutFlows TOTAL" required>
                                     </div>
                                 </div>
@@ -352,13 +369,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetCurrentAssets"
+                                                <input readonly type="text" name="NetAssets[]"
                                                     value="NET ASSETS CURRENT YEAR" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetCurrentAssetsTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Current_Assets_total" placeholder="Net Assets TOTAL"
                                                     required>
                                             </div>
@@ -367,13 +384,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetPrevAssets"
+                                                <input readonly type="text" name="NetAssets[]"
                                                     value="NET ASSETS PREVIOUS YEAR" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetPrevAssetsTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Prev_Assets_total" placeholder="Net Assets TOTAL"
                                                     required>
                                             </div>
@@ -382,13 +399,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetDiffrence" value="DIFFERENCE"
+                                                <input readonly type="text" name="NetAssets[]" value="DIFFERENCE"
                                                     required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetDiffTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Diff_total" placeholder="Net Diffrence TOTAL" required>
                                             </div>
                                         </div>
@@ -398,13 +415,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetInFlow" value="INFLOW"
+                                                <input readonly type="text" name="NetAssets[]" value="INFLOW"
                                                     required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetInFlowTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Inflow_total" placeholder="Net INFLOW TOTAL" required>
                                             </div>
                                         </div>
@@ -412,13 +429,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetOutFlow" value="OUTFLOW"
+                                                <input readonly type="text" name="NetAssets[]" value="OUTFLOW"
                                                     required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetOutFlowTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Outflow_total" placeholder="Net OUTFLOW TOTAL" required>
                                             </div>
                                         </div>
@@ -426,13 +443,13 @@
                                     <div class="row justify-content-end">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetVariance" value="Variance"
+                                                <input readonly type="text" name="NetAssets[]" value="Variance"
                                                     required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-input">
-                                                <input readonly type="text" name="NetVarianceTotal"
+                                                <input type="number" name="AssetAmount[]"
                                                     id="net_Variance_total" placeholder="Net Variance TOTAL" required>
                                             </div>
                                         </div>
@@ -443,11 +460,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 col-md-10">
                                     <div class="single-input">
-                                        <input type="text" name="RemarksAny"
-                                            placeholder="REMARKS(IF ANY): " required>
+                                        <input type="text" name="RemarksAny" placeholder="REMARKS(IF ANY): "
+                                            required>
                                     </div>
                                 </div>
+
+                                <div class="col-lg-12">
+                                    <div class="single-input button">
+                                        <button type="submit" class="cr-btn"><span>Submit NTN Registration
+                                                Form</span></button>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </form>
                     </div>
                 </div>
@@ -469,7 +495,6 @@
                     <p>Your one stop solution to all your tax related problems.
                         Tax smart, the No.1 Tax solution company in pakistan providing their best services to make your
                         life easier and also to help you reach the top. </p>
-                    <h6>JUST DAIL <a href="callto://+00812548359874">+008 12548 359 874</a> (TOLL FREE)</h6>
                 </div>
             </div>
         </div>

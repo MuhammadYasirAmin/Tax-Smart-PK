@@ -48,4 +48,40 @@ class User extends Authenticatable
     {
         return $this->hasMany(AppFormImages::class, 'user_id');
     }
+
+    public function userProperties()
+    {
+        return $this->hasMany(UserProperty::class, 'user_id');
+    }
+
+    public function userBanks()
+    {
+        return $this->hasMany(UserBanks::class, 'user_id');
+    }
+
+    public function userVehciles()
+    {
+        return $this->hasMany(UserVechile::class, 'user_id');
+    }
+
+    public function userAssets()
+    {
+        return $this->hasMany(UserAssets::class, 'user_id');
+    }
+
+    public function userIncomeFlows()
+    {
+        return $this->hasMany(UserIncomeFlows::class, 'user_id');
+    }
+
+    public function userOutFlows()
+    {
+        return $this->hasMany(UserOutFlows::class, 'user_id');
+    }
+
+    public function userNetAssets()
+    {
+        return $this->hasMany(UserNetAssets::class, 'user_id');
+    }
+
 }

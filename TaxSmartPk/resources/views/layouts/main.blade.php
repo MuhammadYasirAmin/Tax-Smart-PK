@@ -341,6 +341,7 @@
 
     <!-- Main JS -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
+    <script src="{{ asset('assets/js/ntn_form.js') }}"></script>
 
     <script>
         function numberWithCommas(x) {
