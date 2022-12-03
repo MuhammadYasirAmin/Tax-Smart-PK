@@ -20,8 +20,8 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->string('UserRemarks')->nullable();
-            $table->bigInteger('UserPhone')->unsigned();
-            $table->bigInteger('UserCnic')->unsigned();
+            $table->string('UserPhone');
+            $table->string('UserCnic');
             $table->rememberToken();
             $table->timestamps();
         });

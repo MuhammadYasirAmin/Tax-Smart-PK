@@ -13,6 +13,6 @@ class UserBanks extends Model
 
     public function user_id()
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 }

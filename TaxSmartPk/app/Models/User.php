@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\WebModels\UserProperty;
+use App\Models\WebModels\UserBanks;
+use App\Models\WebModels\UserVechile;
+use App\Models\WebModels\UserAssets;
+use App\Models\WebModels\UserIncomeFlows;
+use App\Models\WebModels\UserOutFlows;
+use App\Models\WebModels\UserNetAssets;
 
 class User extends Authenticatable
 {

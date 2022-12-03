@@ -1,0 +1,92 @@
+<div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]"
+                                                    value="NET ASSETS CURRENT YEAR" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Current_Assets_total" placeholder="Net Assets TOTAL"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]"
+                                                    value="NET ASSETS PREVIOUS YEAR" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Prev_Assets_total" placeholder="Net Assets TOTAL"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]" value="DIFFERENCE"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Diff_total" placeholder="Net Diffrence TOTAL" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]" value="INFLOW"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Inflow_total" placeholder="Net INFLOW TOTAL" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]" value="OUTFLOW"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Outflow_total" placeholder="Net OUTFLOW TOTAL" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input readonly type="text" name="NetAssets[]" value="Variance"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" name="AssetAmount[]"
+                                                    id="net_Variance_total" placeholder="Net Variance TOTAL" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>

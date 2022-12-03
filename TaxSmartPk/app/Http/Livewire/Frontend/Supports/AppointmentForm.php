@@ -62,12 +62,12 @@ class AppointmentForm extends Component
                 DB::insert($insertQuery);
             }
 
-            foreach ($request->NetAssets as $key => $value) {
-                $insertQuery = "INSERT INTO `user_net_assets`(`Net_Assets`, `Asset_Amount`, `user_id`) VALUES ('". $request->NetAssets[$key] ."', '".$request->AssetAmount[$key]."', '".$UserInfo->id."')";
-                DB::insert($insertQuery);
-            }
+            // foreach ($request->NetAssets as $key => $value) {
+            //     $insertQuery = "INSERT INTO `user_net_assets`(`Net_Assets`, `Asset_Amount`, `user_id`) VALUES ('". $request->NetAssets[$key] ."', '".$request->AssetAmount[$key]."', '".$UserInfo->id."')";
+            //     DB::insert($insertQuery);
+            // }
 
-            return back()->with('Appointment', 'Form has been Submitted.');
+            return redirect('/NTN-Submitted-Form/' .$UserInfo->id. '/View-PDF')->with('Appointment', 'Form has been Submitted.');
         } else {
             return back()->with('Appointment', 'Appointment Not Submitted.');
         }

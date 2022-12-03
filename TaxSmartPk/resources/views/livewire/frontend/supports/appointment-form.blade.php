@@ -44,8 +44,8 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="number" name="CNICNumber" id="user-last-name"
-                                            placeholder="CNIC Number" required>
+                                        <input type="text" name="CNICNumber" maxlength="16" minlength="12"
+                                            pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" placeholder="CNIC Number (12345-1234567-1)" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="single-input">
-                                        <input type="text" name="UserPhone" id="user-phone"
+                                        <input type="text" name="UserPhone" maxlength="12" minlength="11"
                                             placeholder="Phone Number" required>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@
                             </div>
                             <div id="other-assets"></div>
 
-                            <div class="row justify-content-end">
+                            {{-- <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
                                         <input readonly type="text" name="grandTotal_2021" id="grand_Total_2021"
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="col-lg-1 col-md-1">
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <h3 class="pt-5">RECONCILIATION</h3>
 
@@ -240,22 +240,22 @@
                                 <div class="col-lg-1"></div>
                             </div>
 
-                            <div class="row justify-content-end">
+                            {{-- <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="incomingFlows_2021" id="income_Total_2021"
-                                            placeholder="Incoming Flows TOTAL" required>
+                                        <input readonly type="text" name="incomingFlows_2021"
+                                            id="income_Total_2021" placeholder="Incoming Flows TOTAL" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="incomingFlows_2022" id="income_Total_2022"
-                                            placeholder="Incoming Flows TOTAL" required>
+                                        <input readonly type="text" name="incomingFlows_2022"
+                                            id="income_Total_2022" placeholder="Incoming Flows TOTAL" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-1 col-md-1">
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="row justify-content-center">
                                 <div class="col-lg-4 col-md-4">
@@ -345,117 +345,24 @@
                                 <div class="col-lg-1"></div>
                             </div>
 
-                            <div class="row justify-content-end">
+                            {{-- <div class="row justify-content-end">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="outflowsTotal_2021" id="outflows_Total_2021"
-                                            placeholder="OutFlows TOTAL" required>
+                                        <input readonly type="text" name="outflowsTotal_2021"
+                                            id="outflows_Total_2021" placeholder="OutFlows TOTAL" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="single-input">
-                                        <input readonly type="text" name="outflowsTotal_2022" id="outflows_Total_2022"
-                                            placeholder="OutFlows TOTAL" required>
+                                        <input readonly type="text" name="outflowsTotal_2022"
+                                            id="outflows_Total_2022" placeholder="OutFlows TOTAL" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-1 col-md-1">
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <hr class="my-3" />
-
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]"
-                                                    value="NET ASSETS CURRENT YEAR" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Current_Assets_total" placeholder="Net Assets TOTAL"
-                                                    required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]"
-                                                    value="NET ASSETS PREVIOUS YEAR" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Prev_Assets_total" placeholder="Net Assets TOTAL"
-                                                    required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]" value="DIFFERENCE"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Diff_total" placeholder="Net Diffrence TOTAL" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]" value="INFLOW"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Inflow_total" placeholder="Net INFLOW TOTAL" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]" value="OUTFLOW"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Outflow_total" placeholder="Net OUTFLOW TOTAL" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-end">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input readonly type="text" name="NetAssets[]" value="Variance"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" name="AssetAmount[]"
-                                                    id="net_Variance_total" placeholder="Net Variance TOTAL" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 col-md-10">
